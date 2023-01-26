@@ -1,0 +1,16 @@
+@import './src/App/styles/variables';
+
+.link {
+    margin-right: 110px;
+
+    & :hover {
+        color: $turquoise;
+    }
+}
+
+//.arrowIcon {
+//    &:hover {
+//        color: $turquoise;
+//    }
+//    margin-right: 10px;
+//}

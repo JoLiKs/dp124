@@ -1,0 +1,37 @@
+@use 'sass:color';
+@import './src/App/styles/variables';
+
+.button {
+    position: relative;
+    border-radius: 30px;
+    padding: 10px 30px;
+    border: none;
+    display: flex;
+    align-items: center;
+    font-weight: $normal;
+    font-size: 20px;
+    justify-content: center;
+}
+
+.withPrefixPostfix {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    svg {
+        margin-right: 1rem;
+    }
+}
+
+.textWithIcon {
+    text-align: left;
+}
+
+.primary {
+    background-color: $turquoise;
+    color: #ffffff;
+}

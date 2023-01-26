@@ -1,0 +1,15 @@
+@use 'sass:color';
+@import 'src/App/styles/variables';
+
+.link {
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.primary {
+    color: $black;
+    &:hover {
+        color: $turquoise;
+    }
+}

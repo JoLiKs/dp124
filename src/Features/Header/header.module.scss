@@ -3,6 +3,8 @@
 .header {
     width: 100%;
     display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     background: $white;
     height: 99px;
     border-top: 1px solid black;

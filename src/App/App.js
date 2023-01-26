@@ -1,9 +1,13 @@
-import './App.css';
+import { Footer, Header } from '../Features';
+import { MainFirstScreen } from '../Features/MainFirstScreen/MainFirstScreen';
+import styles from './App.module.scss';
 
 export const App = () => {
     return (
-        <div className="App">
-            <header className="App-header"></header>
-        </div>
+        <main className={styles.layout}>
+            <Header />
+            <MainFirstScreen />
+            <Footer />
+        </main>
     );
 };
