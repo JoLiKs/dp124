@@ -1,0 +1,9 @@
+@import './src/App/styles/variables';
+
+.header {
+    width: 100%;
+    display: flex;
+    background: $white;
+    height: 99px;
+    border-top: 1px solid black;
+}
