@@ -7,10 +7,10 @@ export const Tabs = ({ items }) => {
     const openTab = (e) => setActive(+e.target.dataset.index);
     return (
         <div>
-            <div className="tab">
+            <div>
                 {items?.map((n, i) => (
-                    <button className={`tablinks ${i === active ? 'active' : ''}`} onClick={openTab} data-index={i}>
-                        {n.title}
+                    <button style={{ borderTop: 'none', borderRadius: '5px 5px 0 0' }} onClick={openTab} data-index={i}>
+                        {n.tabName}
                     </button>
                 ))}
             </div>

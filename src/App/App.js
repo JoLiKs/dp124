@@ -7,9 +7,9 @@ import { Tabs } from '../Shared/Tabs/Tabs';
 
 export const App = () => {
     const items = [
-        { title: 'London', content: 'London is the capital city of England.' },
-        { title: 'Paris', content: 'Paris is the capital of France.' },
-        { title: 'Tokyo', content: 'Tokyo is the capital of Japan.' },
+        { tabName: 'Модуль 1', title: 'London', content: 'London is the capital city of England.' },
+        { tabName: 'Модуль 2', title: 'Paris', content: 'Paris is the capital of France.' },
+        { tabName: 'Модуль 3', title: 'Tokyo', content: 'Tokyo is the capital of Japan.' },
     ];
     return (
         <main className={styles.layout}>
