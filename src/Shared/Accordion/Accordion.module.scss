@@ -1,0 +1,13 @@
+@import './src/App/styles/variables';
+
+.plusIcon {
+    max-width: 23px;
+    max-height: 23px;
+    color: $white;
+    transition: 0.2s;
+}
+
+.rotateIcon {
+    transform: rotate(45deg);
+    transition: 0.2s;
+}

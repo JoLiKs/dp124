@@ -9,9 +9,14 @@ export { ReactComponent as CupIcon } from './img/cup.svg';
 export { ReactComponent as BagIcon } from './img/handbag.svg';
 export { ReactComponent as FragmentIcon } from './img/fragment.svg';
 export { ReactComponent as OneStarIcon } from './img/oneStar.svg';
+export { ReactComponent as PlusIcon } from './img/plus.svg';
+export { ReactComponent as LineIcon } from './img/line.svg';
+export { ReactComponent as PhotoIcon } from './img/foto.svg';
 
+export { Accordion } from './Accordion/Accordion';
 export { LinkComponent } from './LinkComponent/LinkComponent';
 export { Button } from './Button/Button';
 export { navBtnList } from './config/constants';
 export { coursesList } from './config/constants';
 export { contacts } from './config/constants';
+export { titleCoursesList } from './config/constants';
