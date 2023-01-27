@@ -11,7 +11,7 @@ export { ReactComponent as FragmentIcon } from './img/fragment.svg';
 export { ReactComponent as OneStarIcon } from './img/oneStar.svg';
 export { ReactComponent as PlusIcon } from './img/plus.svg';
 export { ReactComponent as LineIcon } from './img/line.svg';
-export { ReactComponent as PhotoIcon } from './img/foto.svg';
+export { ReactComponent as PhotoIcon } from './img/photo.svg';
 
 export { Accordion } from './Accordion/Accordion';
 export { LinkComponent } from './LinkComponent/LinkComponent';

@@ -9,6 +9,7 @@ export const Button = ({
     disabled,
     prefixIcon,
     postfixIcon,
+    classNameChildren,
     isLoading = false,
     ...props
 }) => {
@@ -19,7 +20,7 @@ export const Button = ({
             className={classNames({
                 [styles.button]: true,
                 [styles.withPrefixPostfix]: !!(prefixIcon || postfixIcon),
-                // [className]: true,
+                [className]: true,
                 [styles[color]]: true,
             })}
         >
@@ -31,6 +32,7 @@ export const Button = ({
                     <div
                         className={classNames({
                             [styles.textWithIcon]: !!prefixIcon,
+                            [classNameChildren]: !!classNameChildren,
                         })}
                     >
                         {children}

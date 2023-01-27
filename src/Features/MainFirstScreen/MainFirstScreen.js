@@ -1,6 +1,6 @@
 import React from 'react';
+import { Button, OneStarIcon } from '../../Shared';
 import styles from './MainFirstScreen.module.scss';
-import { OneStarIcon } from '../../Shared';
 
 export const MainFirstScreen = () => {
     return (
@@ -16,6 +16,7 @@ export const MainFirstScreen = () => {
                 Школа Dev Place помогает новичкам стать программистом и пройти собеседование в зарубежные IT-компании с
                 возможностью работы full remote. Мы оказали помощь уже 94+ начинающим айтишникам
             </h3>
+            <Button color={'secondary'}>Узнать подробнее</Button>
         </div>
     );
 };
