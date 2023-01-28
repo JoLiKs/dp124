@@ -12,6 +12,10 @@ export { ReactComponent as OneStarIcon } from './img/oneStar.svg';
 export { ReactComponent as PlusIcon } from './img/plus.svg';
 export { ReactComponent as LineIcon } from './img/line.svg';
 export { ReactComponent as PhotoIcon } from './img/photo.svg';
+export { ReactComponent as ComfortIcon } from './img/comfort.svg';
+export { ReactComponent as DevelopmentIcon } from './img/development.svg';
+export { ReactComponent as FreeIcon } from './img/freeIcon.svg';
+export { ReactComponent as ProspectsIcon } from './img/prospects.svg';
 
 export { Accordion } from './Accordion/Accordion';
 export { LinkComponent } from './LinkComponent/LinkComponent';
