@@ -3,4 +3,21 @@
 .footer {
     background: $black;
     display: flex;
+    color: $white;
+}
+
+.logo * {
+    fill: $white;
+}
+
+.social {
+    flex-direction: column;
+}
+
+.social * {
+    fill: $white;
+
+    & :hover {
+        fill: $turquoise;
+    }
 }

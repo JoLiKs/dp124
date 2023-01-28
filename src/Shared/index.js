@@ -16,6 +16,7 @@ export { ReactComponent as ComfortIcon } from './img/comfort.svg';
 export { ReactComponent as DevelopmentIcon } from './img/development.svg';
 export { ReactComponent as FreeIcon } from './img/freeIcon.svg';
 export { ReactComponent as ProspectsIcon } from './img/prospects.svg';
+export { ReactComponent as BurstStarIcon } from './img/burst-star.svg';
 
 export { Accordion } from './Accordion/Accordion';
 export { LinkComponent } from './LinkComponent/LinkComponent';
@@ -24,3 +25,5 @@ export { navBtnList } from './config/constants';
 export { coursesList } from './config/constants';
 export { contacts } from './config/constants';
 export { titleCoursesList } from './config/constants';
+export { teachersList } from './config/constants';
+export { TeacherCard } from './TeacherCard/TeacherCard';

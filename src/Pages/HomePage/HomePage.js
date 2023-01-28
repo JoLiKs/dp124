@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import { MainFirstScreen } from '../../Features/MainFirstScreen/MainFirstScreen';
 import { PhotoIcon } from '../../Shared';
-import { AccordionComponent, MainThirdScreen } from '../../Features';
+import { AccordionComponent, MainThirdScreen, MainFourthScreen, TeachersScreen } from '../../Features';
 import { MainSecondScreen } from '../../Features/MainSecondScreen/MainSecondScreen';
 
 export const HomePage = () => {
@@ -10,8 +10,12 @@ export const HomePage = () => {
             <MainFirstScreen />
             <PhotoIcon />
             <MainSecondScreen />
-            <AccordionComponent />
-            <MainThirdScreen />
+            <Suspense fallback={'Загрузка'}>
+                <AccordionComponent />
+                <MainThirdScreen />
+                <MainFourthScreen />
+                <TeachersScreen />
+            </Suspense>
         </>
     );
 };
