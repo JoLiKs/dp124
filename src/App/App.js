@@ -1,17 +1,16 @@
 import { Footer, Header } from '../Features';
-import { MainFirstScreen } from '../Features/MainFirstScreen/MainFirstScreen';
-import { AccordionComponent } from '../Features/AccordionComponent/AccordionComponent';
-import { PhotoIcon } from '../Shared';
+import { BrowserRouter } from 'react-router-dom';
+import { RouterComponent } from '../Features/RouterComponent/RouterComponent';
 import styles from './App.module.scss';
 
 export const App = () => {
     return (
         <main className={styles.layout}>
-            <Header />
-            <MainFirstScreen />
-            <PhotoIcon />
-            <AccordionComponent />
-            <Footer />
+            <BrowserRouter>
+                <Header />
+                <RouterComponent />
+                <Footer />
+            </BrowserRouter>
         </main>
     );
 };
