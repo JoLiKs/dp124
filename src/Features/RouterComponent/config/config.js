@@ -1,4 +1,4 @@
-import { HomePage, TeachersPage } from '../../../Pages';
+import { CoursesPage, HomePage, TeachersPage } from '../../../Pages';
 
 export const path = {
     basename: '/',
@@ -6,6 +6,7 @@ export const path = {
     python: '/python',
     softwareTesting: '/software-testing',
     teachers: '/teachers',
+    courses: '/courses',
 };
 
 export const router = [
@@ -28,5 +29,9 @@ export const router = [
     {
         path: path.teachers,
         element: <TeachersPage />,
+    },
+    {
+        path: path.courses,
+        element: <CoursesPage />,
     },
 ];
