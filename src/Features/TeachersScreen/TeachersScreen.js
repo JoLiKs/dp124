@@ -23,7 +23,7 @@ const TeachersScreen = () => {
                 Наши преподаватели работали в разных аутсорсинговых и продуктовых IT-компаниях, а также на фрилансе. Они
                 используют оригинальные и проверенные на десятках студентов методики обучения.
             </p>
-            <div style={{ display: 'flex' }}>
+            <div style={{ display: 'flex', position: 'relative' }}>
                 {teachersList[randomMizer[randomIndex]]?.map(({ firstName, lastName, teacher, title, photo }) => (
                     <TeacherCard
                         key={Math.random()}

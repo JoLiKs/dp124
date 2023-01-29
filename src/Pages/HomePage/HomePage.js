@@ -1,7 +1,13 @@
 import React, { Suspense } from 'react';
 import { MainFirstScreen } from '../../Features/MainFirstScreen/MainFirstScreen';
 import { PhotoIcon } from '../../Shared';
-import { AccordionComponent, MainThirdScreen, MainFourthScreen, TeachersScreen } from '../../Features';
+import {
+    AccordionComponent,
+    MainThirdScreen,
+    MainFourthScreen,
+    TeachersScreen,
+    FeedbackComponent,
+} from '../../Features';
 import { MainSecondScreen } from '../../Features/MainSecondScreen/MainSecondScreen';
 
 export const HomePage = () => {
@@ -15,6 +21,7 @@ export const HomePage = () => {
                 <MainThirdScreen />
                 <MainFourthScreen />
                 <TeachersScreen />
+                <FeedbackComponent />
             </Suspense>
         </>
     );

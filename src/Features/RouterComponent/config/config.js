@@ -1,10 +1,11 @@
-import { HomePage } from '../../../Pages';
+import { HomePage, TeachersPage } from '../../../Pages';
 
 export const path = {
     basename: '/',
     java: '/java',
     python: '/python',
     softwareTesting: '/software-testing',
+    teachers: '/teachers',
 };
 
 export const router = [
@@ -13,7 +14,7 @@ export const router = [
         element: <HomePage />,
     },
     {
-        path: path.python,
+        path: path.java,
         element: <h1>java</h1>,
     },
     {
@@ -23,5 +24,9 @@ export const router = [
     {
         path: path.softwareTesting,
         element: <h1>softwareTesting</h1>,
+    },
+    {
+        path: path.teachers,
+        element: <TeachersPage />,
     },
 ];

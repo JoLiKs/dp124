@@ -2,19 +2,19 @@
 
 .container {
     width: 300px;
-    position: relative;
     background: $white;
     border: 1px solid $black;
     border-radius: 20px;
+    cursor: pointer;
+}
+
+.wrapper {
+    width: 300px;
+    height: 400px;
 }
 
 .absolute {
-    position: absolute;
-    z-index: -1;
 }
 
 .hover {
-    & :hover {
-        transform: translateY(100px);
-    }
 }

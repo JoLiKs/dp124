@@ -5,9 +5,9 @@ import { router } from './config';
 export const RouterComponent = () => {
     return (
         <Routes>
-            {router.map(({ path, element }) => (
-                <Route key={path.toString()} path={path} element={element} />
-            ))}
+            {router.map(({ path, element }) => {
+                return <Route key={path.toString()} path={path} element={element} />;
+            })}
         </Routes>
     );
 };
