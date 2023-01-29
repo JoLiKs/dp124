@@ -8,9 +8,11 @@
     }
 }
 
-//.arrowIcon {
-//    &:hover {
-//        color: $turquoise;
-//    }
-//    margin-right: 10px;
-//}
+.dropdown {
+    display: none;
+    .arrowIcon {
+        &:hover {
+            display: block;
+        }
+    }
+}
