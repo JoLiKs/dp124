@@ -34,6 +34,9 @@
 .primary {
     background-color: $turquoise;
     color: #ffffff;
+    &:disabled {
+        background-color: gray;
+    }
 }
 
 .secondary {
