@@ -14,8 +14,8 @@ export const NavBar = () => {
                 {navBtnList[1].btnName}
             </Link>
             <ul className={styles.dropdown}>
-                {coursesList.map(({ courseName }) => (
-                    <li>{courseName}</li>
+                {coursesList.map(({ courseName }, index) => (
+                    <li key={index}>{courseName}</li>
                 ))}
             </ul>
         </nav>

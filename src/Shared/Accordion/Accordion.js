@@ -9,14 +9,14 @@ export const Accordion = ({ title, content, titleKey }) => {
     const handleOpen = () => {
         setIsActive(!isActive);
     };
-
+    const titleName = titleKey === 'testing' ? 'Тестирование ПО' : titleKey;
     return (
         <div className={styles.wrapper}>
             <LineIcon />
             <div className={styles.wrapper__accordeonItem} onClick={handleOpen}>
                 <h5 className={styles.wrapper__accordeonItem__title}>
                     {title}
-                    <span>{titleKey}</span>
+                    <span>{titleName}</span>
                 </h5>
                 <span>
                     <PlusIcon

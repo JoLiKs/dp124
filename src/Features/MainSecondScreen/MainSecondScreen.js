@@ -1,7 +1,8 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { advertisementList } from '../../Shared/config/constants';
 import styles from './mainSecondScreen.module.scss';
 import { ArrowsIcon, BurstStarIcon } from '../../Shared';
+
 export const MainSecondScreen = () => {
     return (
         <section className={styles.wrapper}>
@@ -10,7 +11,7 @@ export const MainSecondScreen = () => {
                     Разработчик в 2023 – перспективно, востребовано, интересно
                     <BurstStarIcon />
                 </h2>
-                <span></span>
+                <span />
             </div>
 
             <div className={styles.wrapper__infoContainer}>
@@ -22,12 +23,10 @@ export const MainSecondScreen = () => {
                     <ArrowsIcon />
                 </div>
                 <div className={styles.wrapper__infoContainer__rightBlock}>
-                    {advertisementList.map(({ id, icon, title }) => (
-                        <div className={styles.wrapper__infoContainer__rightBlock__info}>
-                            <Fragment key={id}>
-                                {icon}
-                                <p className={styles.wrapper__infoContainer__rightBlock__info__text}>{title}</p>
-                            </Fragment>
+                    {advertisementList.map(({ id, icon, title }, index) => (
+                        <div key={id + index} className={styles.wrapper__infoContainer__rightBlock__info}>
+                            {icon}
+                            <p className={styles.wrapper__infoContainer__rightBlock__info__text}>{title}</p>
                         </div>
                     ))}
                 </div>

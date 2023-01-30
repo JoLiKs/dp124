@@ -70,7 +70,7 @@ const FeedbackComponent = () => {
                     Начать зарабатывать в IT
                 </Button>
 
-                <input value="" id="tel" />
+                {/*<input value="" id="tel" />*/}
             </form>
         </div>
     );
