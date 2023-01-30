@@ -27,4 +27,5 @@ export { coursesList } from './config/constants';
 export { contacts } from './config/constants';
 export { titleCoursesList } from './config/constants';
 export { teachersList } from './config/constants';
+export { coursePageText } from './config/constants';
 export { TeacherCard } from './TeacherCard/TeacherCard';

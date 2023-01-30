@@ -1,9 +1,10 @@
-import { CoursesPage, HomePage, TeachersPage } from '../../../Pages';
+import { CoursePage, CoursesPage, HomePage, TeachersPage } from '../../../Pages';
 
 export const path = {
     basename: '/',
     java: '/java',
     python: '/python',
+    frontend: '/frontend',
     softwareTesting: '/software-testing',
     teachers: '/teachers',
     courses: '/courses',
@@ -16,15 +17,19 @@ export const router = [
     },
     {
         path: path.java,
-        element: <h1>java</h1>,
+        element: <CoursePage course={'java'} />,
     },
     {
         path: path.python,
-        element: <h1>python</h1>,
+        element: <CoursePage course={'python'} />,
     },
     {
         path: path.softwareTesting,
-        element: <h1>softwareTesting</h1>,
+        element: <CoursePage course={'testing'} />,
+    },
+    {
+        path: path.frontend,
+        element: <CoursePage course={'frontend'} />,
     },
     {
         path: path.teachers,
