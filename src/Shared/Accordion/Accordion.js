@@ -9,7 +9,9 @@ export const Accordion = ({ title, content, titleKey }) => {
     const handleOpen = () => {
         setIsActive(!isActive);
     };
-    const titleName = titleKey === 'testing' ? 'Тестирование ПО' : titleKey;
+
+    const titleName = titleKey === 'testing' ? 'Тестирования ПО' : titleKey;
+
     return (
         <div className={styles.wrapper}>
             <LineIcon />

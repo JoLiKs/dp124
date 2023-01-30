@@ -1,0 +1,88 @@
+@import './src/App/styles/variables';
+.wrapper {
+    position: relative;
+    width: 55%;
+    min-width: 1120px;
+    padding: 0 0 62px 0;
+    &__title {
+        margin: 114px 0 0 0;
+        width: 95%;
+        font-family: gilroy-medium;
+        font-size: 80px;
+        line-height: 80px;
+    }
+    &__text {
+        width: 65%;
+        margin: 24px 0 0 0;
+        font-family: gilroy-medium;
+        font-size: 24px;
+        line-height: 24px;
+    }
+    &__btn {
+        margin: 57px 0 0 0;
+        padding: 18px 73px;
+        font-family: gilroy-semiBold;
+        font-size: 20px;
+        line-height: 20px;
+        cursor: pointer;
+        &::after {
+            content: '';
+            position: absolute;
+            z-index: 5;
+            width: 100%;
+            height: 100%;
+            transform: rotate(5deg);
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transform: rotate(-5deg);
+        }
+
+        &:hover {
+            border: 1px solid $appBackground;
+
+            &:after,
+            &:before {
+                border: 1px solid $turquoise;
+                border-radius: 50px;
+            }
+        }
+    }
+    &__groupStarsIconOne,
+    &__comfortIcon,
+    &__develomentIcon,
+    &__groupStarsIconTwo,
+    &__freeIcon,
+    &__prospectsIcon {
+        position: absolute;
+    }
+    &__comfortIcon {
+        top: 50px;
+        left: -220px;
+    }
+    &__freeIcon {
+        bottom: 30px;
+        left: -230px;
+    }
+    &__develomentIcon {
+        top: 100px;
+        right: -100px;
+    }
+    &__prospectsIcon {
+        bottom: 100px;
+        right: -60px;
+    }
+    &__groupStarsIconOne {
+        top: 70px;
+        right: 250px;
+    }
+    &__groupStarsIconTwo {
+        top: 340px;
+        left: -100px;
+        transform: rotate(90deg);
+    }
+}

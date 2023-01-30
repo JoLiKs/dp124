@@ -1,27 +1,46 @@
 @import './src/App/styles/variables';
 .wrapper {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
+    //margin: 48px 0 26px 0;
+    padding: 48px 0 26px 0;
     background-color: $black;
     color: $appBackground;
-    &__titleBlock {
-        display: flex;
-        &__title {
-            font-family: gilroy-medium;
-            font-size: 32px;
-            line-height: 32px;
-            color: $turquoise;
+    &__icon {
+        position: absolute;
+        bottom: 217px;
+        right: 150px;
+        width: 145px;
+        height: 109px;
+    }
+    &__title {
+        position: absolute;
+        top: 45px;
+        left: 250px;
+        font-family: gilroy-medium;
+        font-size: 32px;
+        line-height: 32px;
+        color: $turquoise;
+        & svg {
+            position: absolute;
+            top: 65px;
+            left: 30px;
+            width: 111px;
+            height: 83px;
         }
+    }
+    &__accordeonContainer {
+        width: 1120px;
         &__text {
+            width: 60%;
+            margin: 0 0 50px 0;
             font-family: gilroy-regular;
             font-size: 20px;
             line-height: 20px;
             color: $appBackground;
         }
-    }
-    &__accordeonContainer {
-        width: 1120px;
     }
 }

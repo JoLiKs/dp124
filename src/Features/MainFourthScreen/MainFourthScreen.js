@@ -7,11 +7,11 @@ import styles from './MainFourthScreen.module.scss';
 
 const MainFourthScreen = () => {
     return (
-        <div>
-            <h3>
+        <section className={styles.wrapper}>
+            <h3 className={styles.wrapper__title}>
                 Наши курсы состоят из: <BurstStarIcon />
             </h3>
-            <div style={{ display: 'flex' }}>
+            <div className={styles.wrapper__topContent} style={{ display: 'flex' }}>
                 <figure>
                     <img width="221" height="251" src={photoOne} alt="" />
                 </figure>
@@ -36,7 +36,7 @@ const MainFourthScreen = () => {
                     <img width="221" height="251" src={photoThree} alt="" />
                 </figure>
             </div>
-            <div style={{ display: 'flex' }}>
+            <div className={styles.wrapper__bottomContent} style={{ display: 'flex' }}>
                 <figure>
                     <img width="221" height="251" src={photoThree} alt="" />
                 </figure>
@@ -61,7 +61,7 @@ const MainFourthScreen = () => {
                     <img width="221" height="251" src={photoTwo} alt="" />
                 </figure>
             </div>
-        </div>
+        </section>
     );
 };
 

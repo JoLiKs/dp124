@@ -1,5 +1,30 @@
 @import './src/App/styles/variables';
-
-ul {
-    max-width: 325px;
+.wrapper {
+    width: 55%;
+    min-width: 1120px;
+    margin: 50px 0 0 0;
+    &__title {
+        position: relative;
+        margin: 0 0 24px 0;
+        width: fit-content;
+        font-family: gilroy-medium;
+        font-size: 40px;
+        line-height: 40px;
+        & svg {
+            position: absolute;
+            top: -30px;
+            right: -60px;
+        }
+    }
+    &__topContent {
+        ul {
+            max-width: 325px;
+            & li {
+                list-style-type: circle;
+                //list-style-image: url('../../Shared/img/ornament.svg');
+            }
+        }
+    }
+    &__bottomContent {
+    }
 }
