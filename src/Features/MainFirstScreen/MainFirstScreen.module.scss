@@ -1,9 +1,60 @@
 @import './src/App/styles/variables';
 
+.wrapper {
+    position: relative;
+    width: 55%;
+    min-width: 1120px;
+    padding: 0 0 200px 0;
+}
+
 .title {
+    margin: 64px 0 42px 0;
+    font-family: gilroy-semiBold;
     font-size: 120px;
-    text-align: center;
-    .noOne {
+    line-height: 120px;
+    //text-align: center;
+    &__noOne {
+        font-family: gilroy-extraBold;
         color: $turquoise;
+        & svg {
+            margin: -15px 15px;
+        }
+    }
+}
+.text {
+    //margin: 0 0 200px 0;
+    padding: 0 200px 0 0;
+    font-family: gilroy-medium;
+    font-size: 24px;
+    line-height: 24px;
+}
+.btn {
+    position: absolute;
+    bottom: 100px;
+    left: 400px;
+    cursor: pointer;
+    //border: none;
+    &::after {
+        content: '';
+        position: absolute;
+        z-index: 5;
+        width: 100%;
+        height: 100%;
+        transform: rotate(5deg);
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transform: rotate(-5deg);
+    }
+    &:hover {
+        border: 1px solid $appBackground;
+        &:after,
+        &:before {
+            border: 1px solid $turquoise;
+            border-radius: 50px;
+        }
     }
 }

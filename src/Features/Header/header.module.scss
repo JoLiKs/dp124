@@ -1,11 +1,32 @@
 @import './src/App/styles/variables';
 
 .header {
-    width: 100%;
+    //width: 100%;
+    height: 99px;
+    margin: 0 32px;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    background: $white;
-    height: 99px;
-    border-top: 1px solid black;
+    justify-content: space-between;
+    border-bottom: 1px solid $headerBorder;
+    text-align: center;
+    color: $black;
+    &__logo {
+        margin: 0 555px 0 50px;
+    }
+    &__tel {
+        margin: 0 0 0 96px;
+        font-family: gilroy-medium;
+        font-size: 20px;
+        color: $black;
+    }
+    &__social {
+        align-items: center;
+        width: 150px;
+        margin: 0 0 0 20px;
+    }
+    &__startBtn {
+        margin: 0 50px 0 65px;
+        padding: 10px 30px;
+        font-family: gilroy-medium;
+    }
 }

@@ -10,7 +10,9 @@ export const NavBar = () => {
             <Link to={path.courses} color="primary" className={styles.link}>
                 {navBtnList[0].btnName} <ArrowIcon className={styles.arrowIcon} />
             </Link>
-            <Link to={path.teachers}>{navBtnList[1].btnName}</Link>
+            <Link to={path.teachers} className={styles.link}>
+                {navBtnList[1].btnName}
+            </Link>
             <ul className={styles.dropdown}>
                 {coursesList.map(({ courseName }) => (
                     <li>{courseName}</li>

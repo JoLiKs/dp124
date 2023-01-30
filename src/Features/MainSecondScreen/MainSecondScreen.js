@@ -1,23 +1,37 @@
 import React, { Fragment } from 'react';
 import { advertisementList } from '../../Shared/config/constants';
-
+import styles from './mainSecondScreen.module.scss';
+import { ArrowsIcon, BurstStarIcon } from '../../Shared';
 export const MainSecondScreen = () => {
     return (
-        <div>
-            <h2>Разработчик в 2023 – перспективно, востребовано, интересно</h2>;
-            <div>
-                <p>
-                    в среднем около <span>$1920</span>в месяц получает специалист уже через 1,5 года работы
-                </p>
-                <div>
+        <section className={styles.wrapper}>
+            <div className={styles.wrapper__titleBlock}>
+                <h2 className={styles.wrapper__titleBlock__title}>
+                    Разработчик в 2023 – перспективно, востребовано, интересно
+                    <BurstStarIcon />
+                </h2>
+                <span></span>
+            </div>
+
+            <div className={styles.wrapper__infoContainer}>
+                <div className={styles.wrapper__infoContainer__leftBlock}>
+                    <p className={styles.wrapper__infoContainer__leftBlock__text}>
+                        в среднем около <span>$1920</span>
+                        <br></br>в месяц получает специалист уже через 1,5 года работы
+                    </p>
+                    <ArrowsIcon />
+                </div>
+                <div className={styles.wrapper__infoContainer__rightBlock}>
                     {advertisementList.map(({ id, icon, title }) => (
-                        <Fragment key={id}>
-                            {icon}
-                            <p>{title}</p>
-                        </Fragment>
+                        <div className={styles.wrapper__infoContainer__rightBlock__info}>
+                            <Fragment key={id}>
+                                {icon}
+                                <p className={styles.wrapper__infoContainer__rightBlock__info__text}>{title}</p>
+                            </Fragment>
+                        </div>
                     ))}
                 </div>
             </div>
-        </div>
+        </section>
     );
 };

@@ -1,7 +1,10 @@
 @import './src/App/styles/variables';
 
 .link {
-    margin-right: 110px;
+    margin-right: 90px;
+    font-family: gilroy-medium;
+    font-size: 20px;
+    color: $black;
 
     & :hover {
         color: $turquoise;

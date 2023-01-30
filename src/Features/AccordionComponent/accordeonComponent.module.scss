@@ -1,0 +1,27 @@
+@import './src/App/styles/variables';
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: $black;
+    color: $appBackground;
+    &__titleBlock {
+        display: flex;
+        &__title {
+            font-family: gilroy-medium;
+            font-size: 32px;
+            line-height: 32px;
+            color: $turquoise;
+        }
+        &__text {
+            font-family: gilroy-regular;
+            font-size: 20px;
+            line-height: 20px;
+            color: $appBackground;
+        }
+    }
+    &__accordeonContainer {
+        width: 1120px;
+    }
+}

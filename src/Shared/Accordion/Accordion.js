@@ -3,7 +3,7 @@ import { LineIcon, PlusIcon } from '../index';
 import { classNames } from '../helpers';
 import styles from './Accordion.module.scss';
 
-export const Accordion = ({ title, content }) => {
+export const Accordion = ({ title, content, titleKey }) => {
     const [isActive, setIsActive] = useState(false);
 
     const handleOpen = () => {
@@ -11,10 +11,13 @@ export const Accordion = ({ title, content }) => {
     };
 
     return (
-        <div style={{ width: '800px', margin: '0 50px' }}>
+        <div className={styles.wrapper}>
             <LineIcon />
-            <div style={{ display: 'flex' }} onClick={handleOpen}>
-                <div>{title}</div>
+            <div className={styles.wrapper__accordeonItem} onClick={handleOpen}>
+                <h5 className={styles.wrapper__accordeonItem__title}>
+                    {title}
+                    <span>{titleKey}</span>
+                </h5>
                 <span>
                     <PlusIcon
                         className={classNames({
@@ -24,7 +27,7 @@ export const Accordion = ({ title, content }) => {
                     />
                 </span>
             </div>
-            {isActive && <div>{content}</div>}
+            {isActive && <div className={styles.wrapper__hiddenInfo}>{content}</div>}
         </div>
     );
 };

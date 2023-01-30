@@ -18,6 +18,7 @@ export { ReactComponent as FreeIcon } from './img/freeIcon.svg';
 export { ReactComponent as ProspectsIcon } from './img/prospects.svg';
 export { ReactComponent as BurstStarIcon } from './img/burst-star.svg';
 export { ReactComponent as ArrowButtonIcon } from './img/arrow-button.svg';
+export { ReactComponent as ArrowsIcon } from './img/arrows.svg';
 
 export { Accordion } from './Accordion/Accordion';
 export { LinkComponent } from './LinkComponent/LinkComponent';
