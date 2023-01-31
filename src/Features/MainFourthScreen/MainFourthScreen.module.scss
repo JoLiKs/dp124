@@ -16,15 +16,24 @@
             right: -60px;
         }
     }
-    &__topContent {
+    &__topContent,
+    &__bottomContent {
+        display: grid;
+        grid-column-gap: 32px;
         ul {
-            max-width: 325px;
+            padding: 10px 0 0 0;
             & li {
-                list-style-type: circle;
-                //list-style-image: url('../../Shared/img/ornament.svg');
+                margin: 0 0 16px 0;
+                padding: 0 0 0 30px;
+                background: url('../../Shared/img/ornament.svg') no-repeat 0 0;
             }
         }
     }
+    &__topContent {
+        grid-template-columns: 1fr 1fr 360px 1fr;
+    }
     &__bottomContent {
+        margin: 24px 0 0 0;
+        grid-template-columns: 1fr 360px 1fr 1fr;
     }
 }

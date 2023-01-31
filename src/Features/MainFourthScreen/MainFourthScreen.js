@@ -11,7 +11,7 @@ const MainFourthScreen = () => {
             <h3 className={styles.wrapper__title}>
                 Наши курсы состоят из: <BurstStarIcon />
             </h3>
-            <div className={styles.wrapper__topContent} style={{ display: 'flex' }}>
+            <div className={styles.wrapper__topContent}>
                 <figure>
                     <img width="221" height="251" src={photoOne} alt="" />
                 </figure>
@@ -25,7 +25,7 @@ const MainFourthScreen = () => {
                     <li>
                         <strong>помощи с поиском</strong> удалённой вакансии;
                     </li>
-                    <li>
+                    <li style={{ color: '#4ca8a9' }}>
                         проектов от <strong>реальных заказчиков</strong> в вашем портфолио;
                     </li>
                     <li>
@@ -36,7 +36,7 @@ const MainFourthScreen = () => {
                     <img width="221" height="251" src={photoThree} alt="" />
                 </figure>
             </div>
-            <div className={styles.wrapper__bottomContent} style={{ display: 'flex' }}>
+            <div className={styles.wrapper__bottomContent}>
                 <figure>
                     <img width="221" height="251" src={photoThree} alt="" />
                 </figure>
@@ -47,7 +47,7 @@ const MainFourthScreen = () => {
                     <li>
                         помощи в <strong>прохождении собеседований</strong> в зарубежные IT-компании;
                     </li>
-                    <li>
+                    <li style={{ color: '#4ca8a9' }}>
                         <strong>консультации</strong> по визам, видам на жительство и разрешением на работу за границей;
                     </li>
                     <li>
