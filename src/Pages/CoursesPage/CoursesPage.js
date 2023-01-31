@@ -3,16 +3,22 @@ import { FeedbackComponent } from '../../Features';
 import { ArrowButtonIcon, OneStarIcon } from '../../Shared';
 import onLinePhoto from '../../Shared/img/offlineCoursesPhoto.svg';
 import offLinePhoto from '../../Shared/img/onlineCoursesPhoto.svg';
+import styles from './CoursesPage.module.scss';
 
 export const CoursesPage = () => {
     return (
         <div>
-            <h2>Курсы</h2>
-            <p>Наша программа разработана ведущими IT-специалистами, которые 4+ года работали с новичками в IT</p>
+            <h2 className={styles.title}>Курсы</h2>
+            <p className={styles.description}>
+                Наша программа разработана ведущими IT-специалистами, которые 4+ года работали с новичками в IT
+            </p>
             <div style={{ display: 'flex' }}>
-                <h3>
-                    <span>ОНЛАЙН</span> ОБУЧЕНИЕ <OneStarIcon />
-                </h3>
+                <div>
+                    <h3 className={styles.typeCourse}>
+                        <span>ОНЛАЙН</span> <span>ОБУЧЕНИЕ</span>
+                    </h3>
+                    <OneStarIcon />
+                </div>
                 <div>
                     <ul>
                         Почему нужно выбрать
