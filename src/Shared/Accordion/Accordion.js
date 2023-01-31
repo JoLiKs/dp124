@@ -15,7 +15,7 @@ export const Accordion = ({ title, content, titleKey }) => {
 
     return (
         <div className={styles.wrapper}>
-            <LineIcon />
+            <LineIcon className={styles.lineIcon} />
             <div className={styles.wrapper__accordeonItem} onClick={handleOpen}>
                 <h5 className={styles.wrapper__accordeonItem__title}>
                     {title.slice(0, indexWord)}

@@ -7,7 +7,6 @@
     font-size: 20px;
     color: $black;
     &:hover {
-        margin-top: 30px;
         color: $turquoise;
     }
 }
@@ -19,11 +18,10 @@
 }
 
 .dropdown {
-    max-width: 395px;
+    max-width: 410px;
     text-align: left;
     background: $white;
     position: absolute;
-    padding-top: 20px;
     top: 60px;
     display: none;
     z-index: 10;
@@ -35,12 +33,14 @@
 
 .arrow {
     transform: rotate(270deg);
-    float: right;
-    height: 25px;
+    min-height: 25px;
     display: none;
 }
 
 .subMenuTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 10px 0;
     &:hover {
         .arrow {
