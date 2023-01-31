@@ -10,14 +10,15 @@ export const Accordion = ({ title, content, titleKey }) => {
         setIsActive(!isActive);
     };
 
-    const titleName = titleKey === 'testing' ? 'Тестирования ПО' : titleKey;
+    const titleName = titleKey === 'testing' ? 'тестирования ПО' : titleKey;
+    const indexWord = title.indexOf(titleName);
 
     return (
         <div className={styles.wrapper}>
             <LineIcon />
             <div className={styles.wrapper__accordeonItem} onClick={handleOpen}>
                 <h5 className={styles.wrapper__accordeonItem__title}>
-                    {title}
+                    {title.slice(0, indexWord)}
                     <span>{titleName}</span>
                 </h5>
                 <span>

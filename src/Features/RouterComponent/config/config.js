@@ -5,7 +5,7 @@ export const path = {
     java: '/java',
     python: '/python',
     frontend: '/frontend',
-    softwareTesting: '/software-testing',
+    testing: '/software-testing',
     teachers: '/teachers',
     courses: '/courses',
 };
@@ -24,7 +24,7 @@ export const router = [
         element: <CoursePage course={'python'} />,
     },
     {
-        path: path.softwareTesting,
+        path: path.testing,
         element: <CoursePage course={'testing'} />,
     },
     {

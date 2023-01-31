@@ -23,6 +23,7 @@ export { ReactComponent as TwoStarsIcon } from './img/twoStars.svg';
 export { ReactComponent as GroupStars } from './img/groupStars.svg';
 
 export { Accordion } from './Accordion/Accordion';
+export { accordionTitle } from './config/constants';
 export { LinkComponent } from './LinkComponent/LinkComponent';
 export { Button } from './Button/Button';
 export { navBtnList } from './config/constants';

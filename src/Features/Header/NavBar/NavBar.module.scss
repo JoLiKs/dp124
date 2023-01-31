@@ -2,20 +2,26 @@
 
 .link {
     margin-right: 90px;
-    font-family: gilroy-medium;
+    font-family: gilroy-medium, serif;
     font-size: 20px;
     color: $black;
-
-    & :hover {
+    &:hover {
         color: $turquoise;
     }
 }
 
-.dropdown {
-    display: none;
-    .arrowIcon {
-        &:hover {
-            display: block;
-        }
+.arrowIcon {
+    &:hover ~ .dropdown {
+        display: block;
     }
+}
+
+.dropdown {
+    color: $black;
+    text-align: left;
+    background: $white;
+    position: absolute;
+    top: 80px;
+    line-height: 30px;
+    display: none;
 }

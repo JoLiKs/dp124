@@ -7,15 +7,17 @@ import styles from './NavBar.module.scss';
 export const NavBar = () => {
     return (
         <nav>
-            <Link to={path.courses} color="primary" className={styles.link}>
-                {navBtnList[0].btnName} <ArrowIcon className={styles.arrowIcon} />
+            <Link to={path.courses} color="primary" className={`${styles.link} ${styles.arrowIcon}`}>
+                {navBtnList[0].btnName} <ArrowIcon />
             </Link>
             <Link to={path.teachers} className={styles.link}>
                 {navBtnList[1].btnName}
             </Link>
             <ul className={styles.dropdown}>
-                {coursesList.map(({ courseName }, index) => (
-                    <li key={index}>{courseName}</li>
+                {coursesList.map(({ courseName, titleKey }, index) => (
+                    <li key={index}>
+                        <Link to={path[titleKey]}>{courseName}</Link>
+                    </li>
                 ))}
             </ul>
         </nav>

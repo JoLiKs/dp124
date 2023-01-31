@@ -1,7 +1,7 @@
 import React from 'react';
-import { Accordion, coursesList, titleCoursesList, TwoStarsIcon } from '../../Shared';
+import { Accordion, accordionTitle, coursesList, titleCoursesList, TwoStarsIcon } from '../../Shared';
+
 import styles from './accordeonComponent.module.scss';
-import { accordeonTitle } from '../../Shared/config/constants';
 
 const AccordionComponent = () => {
     return (
@@ -12,7 +12,7 @@ const AccordionComponent = () => {
                 <TwoStarsIcon />
             </h3>
             <div className={styles.wrapper__accordeonContainer}>
-                <p className={styles.wrapper__accordeonContainer__text}>{accordeonTitle.text}</p>
+                <p className={styles.wrapper__accordeonContainer__text}>{accordionTitle.text}</p>
                 {coursesList.map(({ id, courseName, titleKey }) => (
                     <Accordion key={id} title={courseName} content={titleCoursesList[titleKey]} titleKey={titleKey} />
                 ))}

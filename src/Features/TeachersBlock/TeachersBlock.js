@@ -2,6 +2,7 @@ import React from 'react';
 import { TeacherCard, teachersList } from '../../Shared';
 
 export const TeachersBlock = ({ courseName, facultyKey }) => {
+    console.log(teachersList[facultyKey]);
     return (
         <div>
             <h2>{courseName}</h2>
