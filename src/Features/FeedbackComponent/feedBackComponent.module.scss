@@ -1,0 +1,13 @@
+@import './src/App/styles/variables';
+.wrapper {
+    margin: 128px;
+    &__title {
+        font-family: gilroy-semiBold;
+        font-size: 40px;
+        line-height: 40px;
+    }
+    &__text {
+        font-size: 20px;
+        line-height: 22px;
+    }
+}

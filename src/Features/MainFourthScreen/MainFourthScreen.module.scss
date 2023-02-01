@@ -26,14 +26,21 @@
                 margin: 0 0 16px 0;
                 padding: 0 0 0 30px;
                 background: url('../../Shared/img/ornament.svg') no-repeat 0 0;
+                cursor: pointer;
             }
         }
     }
     &__topContent {
         grid-template-columns: 1fr 1fr 360px 1fr;
+        &__list:hover {
+            color: $turquoise;
+        }
     }
     &__bottomContent {
         margin: 24px 0 0 0;
         grid-template-columns: 1fr 360px 1fr 1fr;
+        &__list:hover {
+            color: $turquoise;
+        }
     }
 }

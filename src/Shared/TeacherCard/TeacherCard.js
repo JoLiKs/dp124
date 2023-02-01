@@ -8,13 +8,13 @@ export const TeacherCard = ({ firstName, lastName, teacher, title, photo, absolu
             <img
                 width="278"
                 height="333"
-                className={classNames({ [styles.absolute]: absolute, [styles.photo]: true })}
+                className={classNames({ [styles.absolute]: absolute, [styles.container__photo]: true })}
                 src={photo}
                 alt={`${firstName} ${lastName}`}
             />
-            <div className={styles.wrapper}>
-                <h5 className={styles.teacherName}>{`${firstName} ${lastName}`}</h5>
-                <p className={styles.teacherFaculty}>{teacher}</p>
+            <div className={styles.container__wrapper}>
+                <h5 className={styles.container__wrapper__teacherName}>{`${firstName} ${lastName}`}</h5>
+                <p className={styles.container__wrapper__teacherFaculty}>{teacher}</p>
                 <p>{title}</p>
             </div>
         </div>

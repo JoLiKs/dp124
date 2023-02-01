@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { BurstStarIcon, Button, CheckBox, Input } from '../../Shared';
+import styles from './feedBackComponent.module.scss';
 
 const FeedbackComponent = () => {
     const [name, setName] = useState('');
@@ -14,11 +15,11 @@ const FeedbackComponent = () => {
     };
 
     return (
-        <div>
-            <h3>
+        <section className={styles.wrapper}>
+            <h3 className={styles.wrapper__title}>
                 Хотите стать программистом, но нужна помощь с выбором? <BurstStarIcon />
             </h3>
-            <p>
+            <p className={styles.wrapper__text}>
                 Оставьте, пожалуйста, ваши контактные данные. Мы бесплатно проконсультируем вас и поможем стать
                 программистом
             </p>
@@ -47,7 +48,7 @@ const FeedbackComponent = () => {
 
                 {/*<input value="" id="tel" />*/}
             </form>
-        </div>
+        </section>
     );
 };
 

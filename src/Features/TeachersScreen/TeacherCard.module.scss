@@ -1,2 +1,35 @@
-.teacherCard {
+@import './src/App/styles/variables';
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 70px 0 0 0;
+    width: 55%;
+    min-width: 1120px;
+    &__title {
+        position: relative;
+        font-family: gilroy-semiBold;
+        font-size: 120px;
+        line-height: 147px;
+        color: $turquoise;
+        &__icon {
+            position: absolute;
+            top: 38px;
+            left: -110px;
+        }
+    }
+    &__text {
+        margin: 50px 0 0 0;
+        width: 64%;
+        font-size: 20px;
+        line-height: 22px;
+    }
+    &__teachersBlock {
+        display: flex;
+        justify-content: space-between;
+        margin: 100px 0 0 0;
+    }
+    &__btn {
+        margin: 84px 0 0 0;
+        align-self: flex-end;
+    }
 }

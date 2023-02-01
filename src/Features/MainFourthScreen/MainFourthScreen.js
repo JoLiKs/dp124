@@ -19,16 +19,16 @@ const MainFourthScreen = () => {
                     <img width="221" height="251" src={photoTwo} alt="" />
                 </figure>
                 <ul>
-                    <li>
+                    <li className={styles.wrapper__topContent__list}>
                         бесконечности <strong>практики;</strong>
                     </li>
-                    <li>
+                    <li className={styles.wrapper__topContent__list}>
                         <strong>помощи с поиском</strong> удалённой вакансии;
                     </li>
-                    <li style={{ color: '#4ca8a9' }}>
+                    <li className={styles.wrapper__topContent__list}>
                         проектов от <strong>реальных заказчиков</strong> в вашем портфолио;
                     </li>
-                    <li>
+                    <li className={styles.wrapper__topContent__list}>
                         работы над проектами в команде под наблюдением <strong>опытного ментора;</strong>
                     </li>
                 </ul>
@@ -41,16 +41,16 @@ const MainFourthScreen = () => {
                     <img width="221" height="251" src={photoThree} alt="" />
                 </figure>
                 <ul>
-                    <li>
+                    <li className={styles.wrapper__bottomContent__list}>
                         только <strong>полезной</strong> теории;
                     </li>
-                    <li>
+                    <li className={styles.wrapper__bottomContent__list}>
                         помощи в <strong>прохождении собеседований</strong> в зарубежные IT-компании;
                     </li>
-                    <li style={{ color: '#4ca8a9' }}>
+                    <li className={styles.wrapper__bottomContent__list}>
                         <strong>консультации</strong> по визам, видам на жительство и разрешением на работу за границей;
                     </li>
-                    <li>
+                    <li className={styles.wrapper__bottomContent__list}>
                         проверенных рекомендаций по <strong>составлению портфолио</strong> для работы на фрилансе;
                     </li>
                 </ul>

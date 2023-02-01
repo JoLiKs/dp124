@@ -14,16 +14,17 @@ const TeachersScreen = () => {
     };
 
     return (
-        <div>
-            <h2>
-                <OneStarIcon /> Преподаватели
+        <section className={styles.wrapper}>
+            <h2 className={styles.wrapper__title}>
+                Преподаватели
+                <OneStarIcon className={styles.wrapper__title__icon} />
             </h2>
-            <p>
+            <p className={styles.wrapper__text}>
                 Разработчики с 4+ годами опыта, которые уже помогли стать программистом сотням начинающих айтишников.
                 Наши преподаватели работали в разных аутсорсинговых и продуктовых IT-компаниях, а также на фрилансе. Они
                 используют оригинальные и проверенные на десятках студентов методики обучения.
             </p>
-            <div style={{ display: 'flex', position: 'relative' }}>
+            <div className={styles.wrapper__teachersBlock} style={{ display: 'flex', position: 'relative' }}>
                 {teachersList[randomMizer[randomIndex]]?.map(({ firstName, lastName, teacher, title, photo }) => (
                     <TeacherCard
                         key={Math.random()}
@@ -57,12 +58,12 @@ const TeachersScreen = () => {
                     })}
                 </div>
             )}
-            <p>
+            <p className={styles.wrapper__btn}>
                 <LinkComponent color={'primary'} onClick={handleOpen}>
                     {isOpen ? 'Скрыть всех' : 'Посмотреть всех'}
                 </LinkComponent>
             </p>
-        </div>
+        </section>
     );
 };
 
