@@ -1,7 +1,8 @@
 @import './src/App/styles/variables';
 
 .header {
-    //width: 100%;
+    max-width: 1920px;
+    width: 100%;
     min-height: 99px;
     margin: 0 32px;
     display: flex;
@@ -11,10 +12,9 @@
     text-align: center;
     color: $black;
     &__logo {
-        margin: 0 555px 0 50px;
+        margin: 0 25% 0 50px;
     }
     &__tel {
-        margin: 0 0 0 96px;
         font-family: gilroy-medium, sans-serif;
         font-size: 20px;
         color: $black;
