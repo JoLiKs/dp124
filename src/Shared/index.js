@@ -35,3 +35,4 @@ export { coursePageText } from './config/constants';
 export { TeacherCard } from './TeacherCard/TeacherCard';
 export { Input } from './Input/Input';
 export { CheckBox } from './CheckBox/CheckBox';
+export { onlineAndOfflinePagesContent } from './config/constants';

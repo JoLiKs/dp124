@@ -1,0 +1,41 @@
+@import './src/App/styles/variables';
+
+.container {
+    max-width: 1050px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    font-size: 1.15rem;
+    h4 {
+        font-weight: 700;
+        margin-bottom: 24px;
+    }
+}
+
+.textBlock {
+    max-width: 600px;
+}
+
+.imageLeft {
+    margin-right: 30px;
+}
+
+.imageRight {
+    margin-left: 30px;
+}
+
+.title {
+    max-width: 256px;
+    font-size: 40px;
+}
+
+.description {
+    margin: 24px 0;
+}
+
+.link {
+    a {
+        color: $turquoise;
+        text-decoration: underline;
+    }
+}

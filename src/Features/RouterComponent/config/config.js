@@ -1,4 +1,4 @@
-import { CoursePage, CoursesPage, HomePage, TeachersPage } from '../../../Pages';
+import { CoursePage, CoursesPage, HomePage, OnlineAndOfflinePage, TeachersPage } from '../../../Pages';
 
 export const path = {
     basename: '/',
@@ -8,6 +8,8 @@ export const path = {
     testing: '/software-testing',
     teachers: '/teachers',
     courses: '/courses',
+    online: '/online',
+    offline: '/offline',
 };
 
 export const router = [
@@ -38,5 +40,13 @@ export const router = [
     {
         path: path.courses,
         element: <CoursesPage />,
+    },
+    {
+        path: path.online,
+        element: <OnlineAndOfflinePage typeCourse={'online'} />,
+    },
+    {
+        path: path.offline,
+        element: <OnlineAndOfflinePage typeCourse={'offline'} />,
     },
 ];

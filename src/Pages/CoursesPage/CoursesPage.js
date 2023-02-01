@@ -1,6 +1,8 @@
 import React from 'react';
 import { FeedbackComponent } from '../../Features';
 import { ArrowButtonIcon, OneStarIcon } from '../../Shared';
+import { Link } from 'react-router-dom';
+import { path } from '../../Features/RouterComponent/config/config';
 import onLinePhoto from '../../Shared/img/offlineCoursesPhoto.svg';
 import offLinePhoto from '../../Shared/img/onlineCoursesPhoto.svg';
 import styles from './CoursesPage.module.scss';
@@ -32,7 +34,9 @@ export const CoursesPage = () => {
                 </div>
             </div>
             <div>
-                <ArrowButtonIcon />
+                <Link to={path.online}>
+                    <ArrowButtonIcon />
+                </Link>
             </div>
             <figure style={{ width: '100%' }}>
                 <img src={onLinePhoto} alt="онлайн обучение" />
@@ -53,7 +57,9 @@ export const CoursesPage = () => {
                 </div>
             </div>
             <div>
-                <ArrowButtonIcon />
+                <Link to={path.offline}>
+                    <ArrowButtonIcon />
+                </Link>
             </div>
             <figure style={{ width: '100%' }}>
                 <img src={offLinePhoto} alt="офлайн обучение" />
