@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, coursePageText, coursesList } from '../../Shared';
+import { Button, coursePageText, coursesList, tabsList } from '../../Shared';
 import photoInfo from './../../Shared/img/photoInfo.svg';
 import { Tabs } from '../../Shared/Tabs/Tabs';
 
@@ -80,7 +80,7 @@ export const CoursePage = ({ course }) => {
                 </div>
                 <div>
                     <h5>Программа КУРСА</h5>
-                    {/*<Tabs />*/}
+                    <Tabs items={tabsList} />
                     <Button color="secondary">Скачать всю программу</Button>
                 </div>
             </div>

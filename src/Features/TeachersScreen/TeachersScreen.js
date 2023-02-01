@@ -24,7 +24,7 @@ const TeachersScreen = () => {
                 Наши преподаватели работали в разных аутсорсинговых и продуктовых IT-компаниях, а также на фрилансе. Они
                 используют оригинальные и проверенные на десятках студентов методики обучения.
             </p>
-            <div className={styles.wrapper__teachersBlock} style={{ display: 'flex', position: 'relative' }}>
+            <div className={styles.wrapper__teachersBlock}>
                 {teachersList[randomMizer[randomIndex]]?.map(({ firstName, lastName, teacher, title, photo }) => (
                     <TeacherCard
                         key={Math.random()}
@@ -39,7 +39,7 @@ const TeachersScreen = () => {
                 ))}
             </div>
             {isOpen && (
-                <div style={{ display: 'flex', flexWrap: 'wrap' }}>
+                <div className={styles.wrapper__teachersBlock}>
                     {Object.keys(randomMizer).map((key) => {
                         if (key !== randomIndex) {
                             return teachersList[randomMizer[key]]?.map(
