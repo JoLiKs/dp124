@@ -2,6 +2,7 @@ import React from 'react';
 import { Button, coursePageText, coursesList, tabsList } from '../../Shared';
 import photoInfo from './../../Shared/img/photoInfo.svg';
 import { Tabs } from '../../Shared/Tabs/Tabs';
+import { CourseCostBlock, JobOpeningsBlock, RegistrationCourseBlock } from '../../Features';
 import styles from './CoursePage.module.scss';
 
 export const CoursePage = ({ course }) => {
@@ -14,7 +15,9 @@ export const CoursePage = ({ course }) => {
                     <h2>{titleCourse.courseName}</h2>
                     <p>{coursePageText[course].subTitle}</p>
                 </div>
-                <div> Блок для формы!</div>
+                <div>
+                    <RegistrationCourseBlock course={course} />
+                </div>
             </div>
             <div>
                 <h6>О чем этот курс</h6>
@@ -84,6 +87,13 @@ export const CoursePage = ({ course }) => {
                     <Tabs items={tabsList[course]} />
                     <Button color="secondary">Скачать всю программу</Button>
                 </div>
+            </div>
+            <div>
+                <JobOpeningsBlock />
+            </div>
+            <div className={styles.CostBlock}>
+                <CourseCostBlock />
+                <RegistrationCourseBlock course={course} />
             </div>
         </div>
     );
