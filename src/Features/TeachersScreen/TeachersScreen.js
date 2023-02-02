@@ -42,7 +42,7 @@ const TeachersScreen = () => {
 
                 <div className={styles.wrapper__teachersBlockHidden}>
                     {Object.keys(randomMizer).map((key) => {
-                        if (key !== randomIndex) {
+                        if (+key !== randomIndex) {
                             return teachersList[randomMizer[key]]?.map(
                                 ({ firstName, lastName, teacher, title, photo }) => (
                                     <TeacherCard

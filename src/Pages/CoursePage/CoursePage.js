@@ -2,12 +2,13 @@ import React from 'react';
 import { Button, coursePageText, coursesList, tabsList } from '../../Shared';
 import photoInfo from './../../Shared/img/photoInfo.svg';
 import { Tabs } from '../../Shared/Tabs/Tabs';
+import styles from './CoursePage.module.scss';
 
 export const CoursePage = ({ course }) => {
     const titleCourse = coursesList.find(({ titleKey }) => titleKey === course);
 
     return (
-        <div>
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
             <div style={{ display: 'flex' }}>
                 <div>
                     <h2>{titleCourse.courseName}</h2>
@@ -19,7 +20,7 @@ export const CoursePage = ({ course }) => {
                 <h6>О чем этот курс</h6>
                 <p>{coursePageText[course].courseAbout}</p>
             </div>
-            <div>
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                 <h5>Как проходит обучение</h5>
                 <div style={{ display: 'flex' }}>
                     <p>90% практики 01</p>
@@ -78,9 +79,9 @@ export const CoursePage = ({ course }) => {
                         </ul>
                     </div>
                 </div>
-                <div>
+                <div className={styles.tabsBlock}>
                     <h5>Программа КУРСА</h5>
-                    <Tabs items={tabsList} />
+                    <Tabs items={tabsList[course]} />
                     <Button color="secondary">Скачать всю программу</Button>
                 </div>
             </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Tab } from './Tab/Tab';
-
+import styles from './Tabs.module.scss';
+import { classNames } from '../helpers';
 export const Tabs = ({ items }) => {
     const [active, setActive] = React.useState(1);
 
@@ -11,7 +12,10 @@ export const Tabs = ({ items }) => {
                 {items?.map((n, i) => (
                     <button
                         key={n + i}
-                        style={{ borderTop: 'none', borderRadius: '5px 5px 0 0' }}
+                        className={classNames({
+                            [styles.tabBtn]: true,
+                            [styles.activeTab]: !!active,
+                        })}
                         onClick={openTab}
                         data-index={i}
                     >
