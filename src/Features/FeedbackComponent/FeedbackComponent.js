@@ -24,27 +24,31 @@ const FeedbackComponent = () => {
                 программистом
             </p>
             <form onSubmit={handleSubmit}>
-                <Input type="text" legend="Имя*" placeholder="Введите ваше имя" value={name} onChange={setName} />
-                <Input
-                    type="text"
-                    legend="Номер или E-mail*"
-                    placeholder="Введите Номер или E-mail"
-                    value={phoneOrEmail}
-                    onChange={setPhoneOrEmail}
-                />
-                <Input
-                    type="text"
-                    legend="Комментарий"
-                    placeholder="Здесь вы  можете оставить детали по способу связи или вопрос"
-                    value={comment}
-                    onChange={setComment}
-                />
-                <CheckBox id="checkbox" checked={checkbox} onChange={setCheckbox}>
-                    Я ознакомился с <a href="#>"> договором оферты</a> и согласен на обработку персональных данных
-                </CheckBox>
-                <Button type="submit" disabled={disabled}>
-                    Начать зарабатывать в IT
-                </Button>
+                <div className={styles.wrapper__formInputWrapper}>
+                    <Input type="text" legend="Имя*" placeholder="Введите ваше имя" value={name} onChange={setName} />
+                    <Input
+                        type="text"
+                        legend="Номер или E-mail*"
+                        placeholder="Введите Номер или E-mail"
+                        value={phoneOrEmail}
+                        onChange={setPhoneOrEmail}
+                    />
+                    <Input
+                        type="text"
+                        legend="Комментарий"
+                        placeholder="Здесь вы  можете оставить детали по способу связи или вопрос"
+                        value={comment}
+                        onChange={setComment}
+                    />
+                </div>
+                <div className={styles.wrapper__formSubmitWrapper}>
+                    <CheckBox id="checkbox" checked={checkbox} onChange={setCheckbox}>
+                        Я ознакомился с <a href="#>"> договором оферты</a> и согласен на обработку персональных данных
+                    </CheckBox>
+                    <Button type="submit" disabled={disabled}>
+                        Начать зарабатывать в IT
+                    </Button>
+                </div>
 
                 {/*<input value="" id="tel" />*/}
             </form>

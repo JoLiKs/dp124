@@ -7,8 +7,7 @@ export const CheckBox = ({ id, checked, onChange, label, children }) => {
     return (
         <div>
             <input id={id} type="checkbox" checked={checked} onChange={handleChecked} />
-            <label htmlFor={id}>{label}</label>
-            {children}
+            <label htmlFor={id}>{children}</label>
         </div>
     );
 };

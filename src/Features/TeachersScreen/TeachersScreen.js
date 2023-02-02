@@ -39,7 +39,8 @@ const TeachersScreen = () => {
                 ))}
             </div>
             {isOpen && (
-                <div className={styles.wrapper__teachersBlock}>
+
+                <div className={styles.wrapper__teachersBlockHidden}>
                     {Object.keys(randomMizer).map((key) => {
                         if (key !== randomIndex) {
                             return teachersList[randomMizer[key]]?.map(

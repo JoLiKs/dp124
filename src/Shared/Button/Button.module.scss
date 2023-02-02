@@ -35,7 +35,8 @@
     background-color: $turquoise;
     color: #ffffff;
     &:disabled {
-        background-color: gray;
+        background-color: $turquoise;
+        opacity: 0.5;
     }
 }
 

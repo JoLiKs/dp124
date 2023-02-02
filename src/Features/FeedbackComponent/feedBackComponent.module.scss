@@ -2,12 +2,39 @@
 .wrapper {
     margin: 128px;
     &__title {
+        position: relative;
+        width: 70%;
         font-family: gilroy-semiBold;
         font-size: 40px;
         line-height: 40px;
+        & svg {
+            position: absolute;
+            top: -30px;
+            right: -15px;
+        }
     }
     &__text {
+        margin: 24px 0 0 0;
+        width: 60%;
         font-size: 20px;
         line-height: 22px;
+    }
+    &__formInputWrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 2fr;
+        grid-column-gap: 20px;
+        margin: 56px 0 0 0;
+    }
+    &__formSubmitWrapper {
+        display: flex;
+        margin: 40px 0 0 0;
+        & div {
+            display: flex;
+            & label {
+                width: 60%;
+                margin: 0 0 0 10px;
+                cursor: pointer;
+            }
+        }
     }
 }
