@@ -14,7 +14,7 @@ export const Tabs = ({ items }) => {
                         key={n + i}
                         className={classNames({
                             [styles.tabBtn]: true,
-                            [styles.activeTab]: !!active,
+                            [styles.activeTab]: active === i,
                         })}
                         onClick={openTab}
                         data-index={i}

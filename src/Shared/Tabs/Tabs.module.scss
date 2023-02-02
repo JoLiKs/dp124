@@ -1,13 +1,42 @@
 @import 'src/App/styles/variables';
 
 .tabBtn {
+    margin-left: 15px;
     font-weight: 700;
     font-size: 24px;
-    padding: 16px 46px;
+    padding: 16px 16px;
     border-radius: 20px 20px 0 0;
     border: none;
+    cursor: pointer;
 }
 
 .activeTab {
     background-color: $turquoise;
+}
+
+.tabContentBlock {
+    padding: 40px 64px;
+    border: 1px solid #1b1b1b;
+    border-radius: 15px;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 26px;
+}
+
+.description {
+    font-size: 16px;
+    color: #575658;
+    max-height: 168px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    li {
+        margin: 0 0 16px 0;
+        padding: 0 0 0 30px;
+        background: url('../../Shared/img/snowflake.svg') no-repeat 0 0;
+        cursor: pointer;
+    }
 }

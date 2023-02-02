@@ -5,7 +5,6 @@
     margin: 70px 0 0 0;
     width: 55%;
     min-width: 1120px;
-    border: 1px solid black;
     &__title {
         position: relative;
         font-family: gilroy-semiBold, sans-serif;
@@ -26,11 +25,10 @@
     }
     &__teachersBlock {
         position: relative;
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         margin-top: 100px;
         flex-wrap: wrap;
-
     }
     &__teachersBlockHidden {
         display: grid;
