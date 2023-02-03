@@ -4,6 +4,7 @@ import { Button, LogoIcon } from '../../Shared';
 import { NavBar } from './NavBar';
 import { Social } from './Social';
 import { tel } from './config';
+import { BurgerMenu } from '../index';
 import styles from './header.module.scss';
 
 export const Header = () => {
@@ -18,6 +19,7 @@ export const Header = () => {
             </a>
             <Social className={styles.header__social} />
             <Button className={styles.header__startBtn}>Начать зарабатывать в IT</Button>
+            <BurgerMenu />
         </header>
     );
 };

@@ -1,0 +1,15 @@
+.burger_container {
+    display: none;
+}
+
+.burger_btn {
+    border: none;
+    max-width: 25px;
+    max-height: 25px;
+}
+
+@media (max-width: 900px) {
+    .burger_container {
+        display: block;
+    }
+}

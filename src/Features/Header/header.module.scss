@@ -13,6 +13,10 @@
     color: $black;
     &__logo {
         margin: 0 25% 0 50px;
+        svg {
+            max-width: 50px;
+            max-height: 65px;
+        }
     }
     &__tel {
         font-family: gilroy-medium, sans-serif;

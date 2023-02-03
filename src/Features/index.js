@@ -11,3 +11,4 @@ export const MainThirdScreen = lazy(() => import('../Features/MainThirdScreen/Ma
 export const MainFourthScreen = lazy(() => import('../Features/MainFourthScreen/MainFourthScreen'));
 export const TeachersScreen = lazy(() => import('../Features/TeachersScreen/TeachersScreen'));
 export const FeedbackComponent = lazy(() => import('../Features/FeedbackComponent/FeedbackComponent'));
+export const BurgerMenu = lazy(() => import('../Features/BurgerMenu/BurgerMenu'));

@@ -3,18 +3,19 @@
 .container {
     position: relative;
     margin: 0 16px 20px 16px;
-    //width: 300px;
     background: $white;
     border-radius: 20px;
     cursor: pointer;
     &:hover &__photo {
         z-index: 0;
         transform: rotate(-5deg) translateY(-50px);
+        transition: 0.2s;
     }
     &:hover &__wrapper {
         background-color: $turquoise;
         color: #fff;
         transform: rotate(5deg) translateY(120px);
+        transition: 0.2s;
     }
     &__wrapper {
         width: 278px;
@@ -38,10 +39,4 @@
         z-index: -10;
         border-radius: 2rem;
     }
-}
-
-.absolute {
-}
-
-.hover {
 }

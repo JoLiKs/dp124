@@ -21,6 +21,7 @@ export { ReactComponent as ArrowButtonIcon } from './img/arrow-button.svg';
 export { ReactComponent as ArrowsIcon } from './img/arrows.svg';
 export { ReactComponent as TwoStarsIcon } from './img/twoStars.svg';
 export { ReactComponent as GroupStars } from './img/groupStars.svg';
+export { ReactComponent as BurgerIcon } from './img/burger-menu.svg';
 
 export { Accordion } from './Accordion/Accordion';
 export { accordionTitle } from './config/constants';
