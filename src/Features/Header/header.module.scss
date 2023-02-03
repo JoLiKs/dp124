@@ -11,8 +11,18 @@
     border-bottom: 1px solid $headerBorder;
     text-align: center;
     color: $black;
+
+    @media (max-width: 900px) {
+        display: none;
+    }
+
     &__logo {
         margin: 0 25% 0 50px;
+
+        @media (min-width: 1240px) {
+            margin: 0 5% 0 50px;
+        }
+
         svg {
             max-width: 50px;
             max-height: 65px;

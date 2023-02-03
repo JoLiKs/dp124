@@ -6,7 +6,7 @@ import styles from './NavBar.module.scss';
 
 export const NavBar = () => {
     return (
-        <nav>
+        <nav className={styles.nav_container}>
             <Link to={path.courses} color="primary" className={`${styles.link} ${styles.arrowIcon}`}>
                 {navBtnList[0].btnName} <ArrowIcon />
             </Link>

@@ -1,11 +1,16 @@
 @import './src/App/styles/variables';
-
+.nav_container {
+    display: flex;
+}
 .link {
     white-space: nowrap;
     margin-right: 90px;
     font-family: gilroy-medium, serif;
     font-size: 20px;
     color: $black;
+    @media (min-width: 1240px) {
+        margin-right: 50px;
+    }
     &:hover {
         color: $turquoise;
     }

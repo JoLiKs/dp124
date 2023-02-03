@@ -9,14 +9,15 @@ import {
     FeedbackComponent,
 } from '../../Features';
 import { MainSecondScreen } from '../../Features/MainSecondScreen/MainSecondScreen';
+import styles from './HomePage.module.scss';
 
 export const HomePage = () => {
     return (
         <>
             <MainFirstScreen />
-            <PhotoIcon />
+            <PhotoIcon className={styles.imageIcon} />
             <MainSecondScreen />
-            <Suspense fallback={'Загрузка'}>
+            <Suspense fallback="...Loading">
                 <AccordionComponent />
                 <MainThirdScreen />
                 <MainFourthScreen />

@@ -1,5 +1,7 @@
 .burger_container {
     display: none;
+    background-color: black;
+    color: white;
 }
 
 .burger_btn {
@@ -10,6 +12,7 @@
 
 @media (max-width: 900px) {
     .burger_container {
-        display: block;
+        display: flex;
+        flex-direction: column;
     }
 }

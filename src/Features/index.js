@@ -5,6 +5,7 @@ export { DeveloperTitleBlock } from './DeveloperTitleBlock/DeveloperTitleBlock';
 export { RegistrationCourseBlock } from './RegistrationCourseBlock/RegistrationCourseBlock';
 export { CourseCostBlock } from './CourseCostBlock/CourseCostBlock';
 export { JobOpeningsBlock } from './JobOpeningsBlock/JobOpeningsBlock';
+
 export const Footer = lazy(() => import('../Features/Footer/Footer'));
 export const AccordionComponent = lazy(() => import('../Features/AccordionComponent/AccordionComponent'));
 export const MainThirdScreen = lazy(() => import('../Features/MainThirdScreen/MainThirdScreen'));

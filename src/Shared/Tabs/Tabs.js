@@ -3,7 +3,7 @@ import { Tab } from './Tab/Tab';
 import styles from './Tabs.module.scss';
 import { classNames } from '../helpers';
 export const Tabs = ({ items }) => {
-    const [active, setActive] = React.useState(1);
+    const [active, setActive] = React.useState(0);
 
     const openTab = (e) => setActive(+e.target.dataset.index);
     return (
