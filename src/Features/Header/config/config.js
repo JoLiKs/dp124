@@ -1,7 +1,7 @@
 import { FacebookIcon, InstagramIcon, TelegramIcon, TicTocIcon } from '../../../Shared';
 
 export const socialLists = [
-    { icon: <InstagramIcon />, link: '#' },
+    { icon: <InstagramIcon />, link: 'https://www.instagram.com/dev_place_/' },
     { icon: <FacebookIcon />, link: '#' },
     { icon: <TelegramIcon />, link: '#' },
     { icon: <TicTocIcon />, link: '#' },
