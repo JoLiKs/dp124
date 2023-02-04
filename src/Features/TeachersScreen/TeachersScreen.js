@@ -6,7 +6,7 @@ import styles from './TeacherCard.module.scss';
 
 const randomIndex = getRndInteger(1, 4);
 
-const TeachersScreen = () => {
+export const TeachersScreen = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     const handleOpen = () => {
@@ -66,5 +66,3 @@ const TeachersScreen = () => {
         </section>
     );
 };
-
-export default TeachersScreen;

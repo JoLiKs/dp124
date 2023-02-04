@@ -2,7 +2,7 @@ import React from 'react';
 import { BurstStarIcon, TeacherCard, teachersList } from '../../Shared';
 import styles from './TheachersBlock.module.scss';
 
-export const TeachersBlock = ({ courseName, facultyKey, index }) => {
+export const TeachersBlock = ({ courseName, facultyKey, index, teacherPage }) => {
     const titleName = facultyKey === 'testing' ? 'тестирования ПО' : facultyKey;
     const indexWord = courseName.indexOf(titleName);
 
@@ -29,6 +29,7 @@ export const TeachersBlock = ({ courseName, facultyKey, index }) => {
                         lastName={lastName}
                         teacher={teacher}
                         title={title}
+                        teacherPage={teacherPage}
                     />
                 ))}
             </div>

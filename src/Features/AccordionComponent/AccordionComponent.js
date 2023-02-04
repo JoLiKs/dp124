@@ -3,7 +3,7 @@ import { Accordion, accordionTitle, coursesList, titleCoursesList, TwoStarsIcon 
 
 import styles from './accordeonComponent.module.scss';
 
-const AccordionComponent = () => {
+export const AccordionComponent = () => {
     return (
         <section className={styles.wrapper}>
             <TwoStarsIcon className={styles.wrapper__icon} />
@@ -20,5 +20,3 @@ const AccordionComponent = () => {
         </section>
     );
 };
-
-export default AccordionComponent;

@@ -2,7 +2,7 @@ import React from 'react';
 import { Button, ComfortIcon, DevelopmentIcon, FreeIcon, GroupStars, ProspectsIcon } from '../../Shared';
 import styles from './mainThirdScreen.module.scss';
 
-const MainThirdScreen = () => {
+export const MainThirdScreen = () => {
     return (
         <section className={styles.wrapper}>
             <ComfortIcon className={styles.wrapper__comfortIcon} />
@@ -21,5 +21,3 @@ const MainThirdScreen = () => {
         </section>
     );
 };
-
-export default MainThirdScreen;

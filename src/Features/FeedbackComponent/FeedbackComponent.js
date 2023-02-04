@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { BurstStarIcon, Button, CheckBox, Input } from '../../Shared';
 import styles from './feedBackComponent.module.scss';
 
-const FeedbackComponent = () => {
+export const FeedbackComponent = () => {
     const [name, setName] = useState('');
     const [phoneOrEmail, setPhoneOrEmail] = useState('');
     const [comment, setComment] = useState('');
@@ -53,5 +53,3 @@ const FeedbackComponent = () => {
         </section>
     );
 };
-
-export default FeedbackComponent;

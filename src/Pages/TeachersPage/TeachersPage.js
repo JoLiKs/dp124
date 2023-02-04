@@ -17,7 +17,13 @@ export const TeachersPage = () => {
 
             <div>
                 {coursesList.map(({ titleKey, courseName }, index) => (
-                    <TeachersBlock key={titleKey} courseName={courseName} facultyKey={titleKey} index={index} />
+                    <TeachersBlock
+                        key={titleKey}
+                        courseName={courseName}
+                        facultyKey={titleKey}
+                        index={index}
+                        teacherPage
+                    />
                 ))}
             </div>
 

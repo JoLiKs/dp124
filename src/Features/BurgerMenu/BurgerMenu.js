@@ -6,7 +6,7 @@ import { Social } from '../Header/Social';
 import stylesBurger from './BurgerMenu.module.scss';
 import styles from '../Header/header.module.scss';
 
-const BurgerMenu = () => {
+export const BurgerMenu = () => {
     const [open, setOpen] = useState(false);
 
     const handleOpen = () => {
@@ -31,5 +31,3 @@ const BurgerMenu = () => {
         </div>
     );
 };
-
-export default BurgerMenu;

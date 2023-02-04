@@ -5,7 +5,7 @@ import photoTwo from '../../Shared/img/photoTwo.svg';
 import photoThree from '../../Shared/img/photoThree.svg';
 import styles from './MainFourthScreen.module.scss';
 
-const MainFourthScreen = () => {
+export const MainFourthScreen = () => {
     return (
         <section className={styles.wrapper}>
             <h3 className={styles.wrapper__title}>
@@ -64,5 +64,3 @@ const MainFourthScreen = () => {
         </section>
     );
 };
-
-export default MainFourthScreen;

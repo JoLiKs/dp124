@@ -1,6 +1,5 @@
-import React, { Suspense } from 'react';
+import React from 'react';
 import { MainFirstScreen } from '../../Features/MainFirstScreen/MainFirstScreen';
-import { PhotoIcon } from '../../Shared';
 import {
     AccordionComponent,
     MainThirdScreen,
@@ -9,21 +8,22 @@ import {
     FeedbackComponent,
 } from '../../Features';
 import { MainSecondScreen } from '../../Features/MainSecondScreen/MainSecondScreen';
-import styles from './HomePage.module.scss';
+
+import image from '../../Shared/img/photo.png';
 
 export const HomePage = () => {
     return (
         <>
             <MainFirstScreen />
-            <PhotoIcon className={styles.imageIcon} />
+            <figure>
+                <img height="100%" width="100%" src={image} alt="" />
+            </figure>
             <MainSecondScreen />
-            <Suspense fallback="...Loading">
-                <AccordionComponent />
-                <MainThirdScreen />
-                <MainFourthScreen />
-                <TeachersScreen />
-                <FeedbackComponent />
-            </Suspense>
+            <AccordionComponent />
+            <MainThirdScreen />
+            <MainFourthScreen />
+            <TeachersScreen />
+            <FeedbackComponent />
         </>
     );
 };
