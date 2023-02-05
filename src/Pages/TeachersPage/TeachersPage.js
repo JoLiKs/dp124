@@ -15,7 +15,7 @@ export const TeachersPage = () => {
                 используют оригинальные и проверенные на десятках студентов методики обучения.
             </p>
 
-            <div>
+            <div style={{ padding: '0 10px' }}>
                 {coursesList.map(({ titleKey, courseName }, index) => (
                     <TeachersBlock
                         key={titleKey}

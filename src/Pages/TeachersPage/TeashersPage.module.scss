@@ -1,10 +1,35 @@
 .container {
     max-width: 1184px;
+    width: 100%;
+    @media (max-width: 605px) {
+        padding: 0 15px;
+    }
 }
 
 .title {
     text-align: center;
     font-size: 7.5rem;
+    @media (max-width: 1024px) {
+        font-size: 6rem;
+        svg {
+            width: 60px;
+            height: 60px;
+        }
+    }
+    @media (max-width: 810px) {
+        font-size: 5rem;
+        svg {
+            width: 50px;
+            height: 50px;
+        }
+    }
+    @media (max-width: 605px) {
+        font-size: 3rem;
+        svg {
+            width: 30px;
+            height: 30px;
+        }
+    }
 }
 
 .subtitle {
@@ -13,4 +38,14 @@
     padding-left: 6rem;
     font-size: 1.25rem;
     margin: 1rem 0 2rem;
+    @media (max-width: 810px) {
+        font-size: 1rem;
+    }
+    @media (max-width: 605px) {
+        font-size: 0.8rem;
+        svg {
+            width: 30px;
+            height: 30px;
+        }
+    }
 }
