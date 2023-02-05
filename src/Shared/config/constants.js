@@ -97,6 +97,13 @@ export const teachersList = {
             photo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLY0ApLM3hy0uxr_2TET1gbrvLaDCLeyltKA&usqp=CAU',
             title: `Сто лет отработал в лучшей компании в РБ и наконец стал зарабатывать заветные 3500. Начал программировать раньше, чем перестал срать в штаны. Потому что у нас только самые одаренные программисты. `,
         },
+        {
+            firstName: 'Кирил',
+            lastName: 'Лучезарный',
+            teacher: 'Java-разработчик',
+            photo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLY0ApLM3hy0uxr_2TET1gbrvLaDCLeyltKA&usqp=CAU',
+            title: `Сто лет отработал в лучшей компании в РБ и наконец стал зарабатывать заветные 3500. Начал программировать раньше, чем перестал срать в штаны. Потому что у нас только самые одаренные программисты. `,
+        },
     ],
     python: [
         {

@@ -22,11 +22,7 @@ export const TeacherCard = ({ firstName, lastName, teacher, title, photo, teache
             )}
             {teacherPage && (
                 <div className={styles.container}>
-                    <img
-                        // className={styles.container__photo}
-                        src={photo}
-                        alt={`${firstName} ${lastName}`}
-                    />
+                    <img className={styles.container__photoTwo} src={photo} alt={`${firstName} ${lastName}`} />
                     <div>
                         <h5 className={styles.container__wrapper__teacherName}>{`${firstName} ${lastName}`}</h5>
                         <p className={styles.container__wrapper__teacherFaculty}>{teacher}</p>

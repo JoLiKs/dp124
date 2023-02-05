@@ -2,7 +2,6 @@
 
 .container {
     position: relative;
-    margin: 0 16px 20px 16px;
     background: $white;
     border-radius: 20px;
     cursor: pointer;
@@ -39,4 +38,11 @@
         z-index: -10;
         border-radius: 2rem;
     }
+}
+
+.container__photoTwo {
+    border-radius: 30px;
+    max-width: 278px;
+    width: 100%;
+    max-height: 333px;
 }

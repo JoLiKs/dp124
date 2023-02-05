@@ -18,7 +18,7 @@ export const TeachersBlock = ({ courseName, facultyKey, index, teacherPage }) =>
         );
 
     return (
-        <div>
+        <>
             <h2 className={styles.facultyName}>{titleContent}</h2>
             <div className={styles.cardBlock}>
                 {teachersList[facultyKey].map(({ firstName, lastName, teacher, title, photo }) => (
@@ -33,6 +33,6 @@ export const TeachersBlock = ({ courseName, facultyKey, index, teacherPage }) =>
                     />
                 ))}
             </div>
-        </div>
+        </>
     );
 };

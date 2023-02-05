@@ -5,7 +5,7 @@ import styles from './TeashersPage.module.scss';
 
 export const TeachersPage = () => {
     return (
-        <div>
+        <div className={styles.container}>
             <h2 className={styles.title}>
                 Преподаватели <OneStarIcon />
             </h2>

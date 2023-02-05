@@ -2,9 +2,8 @@
 .wrapper {
     display: flex;
     flex-direction: column;
-    margin: 70px 0 0 0;
     width: 55%;
-    min-width: 1120px;
+    min-width: 1240px;
     &__title {
         position: relative;
         font-family: gilroy-semiBold, sans-serif;
@@ -27,18 +26,22 @@
         position: relative;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        margin-top: 100px;
+        gap: 32px;
+        margin: 100px 0 32px 0;
         flex-wrap: wrap;
-
-    }
-    &__teachersBlockHidden {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
         align-self: center;
     }
     &__teachersBlockHidden {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 32px;
+        flex-wrap: wrap;
+        align-self: center;
+    }
+    &__teachersBlockHidden {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 32px;
         align-self: center;
     }
     &__btn {

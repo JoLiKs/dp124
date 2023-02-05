@@ -88,9 +88,6 @@ export const CoursePage = ({ course }) => {
                     <Button color="secondary">Скачать всю программу</Button>
                 </div>
             </div>
-            <div>
-                <JobOpeningsBlock />
-            </div>
             <div className={styles.CostBlock}>
                 <CourseCostBlock />
                 <RegistrationCourseBlock course={course} />
