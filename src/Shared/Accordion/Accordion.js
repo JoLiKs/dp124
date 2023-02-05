@@ -2,8 +2,8 @@ import { useState } from 'react';
 import { LineIcon, PlusIcon } from '../index';
 import { classNames } from '../helpers';
 import { Link } from 'react-router-dom';
-import styles from './Accordion.module.scss';
 import { path } from '../../Features/RouterComponent/config/config';
+import styles from './Accordion.module.scss';
 
 export const Accordion = ({ title, content, titleKey }) => {
     const [isActive, setIsActive] = useState(false);

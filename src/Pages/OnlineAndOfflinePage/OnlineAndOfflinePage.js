@@ -19,16 +19,18 @@ export const OnlineAndOfflinePage = ({ typeCourse }) => {
                 <p className={styles.description}>{onlineAndOfflinePagesContent[typeCourse].description}</p>
             </div>
             <div>
-                {onlineAndOfflinePagesContent.coursesBlock.map(({ developer, titleJob, pathName }, index) => (
-                    <DeveloperTitleBlock
-                        key={developer}
-                        imgList={imgList}
-                        developer={developer}
-                        titleJob={titleJob}
-                        pathName={pathName}
-                        index={index}
-                    />
-                ))}
+                {onlineAndOfflinePagesContent.coursesBlock.map(({ developer, titleJob, pathName }, index) => {
+                    return (
+                        <DeveloperTitleBlock
+                            key={developer}
+                            imgList={imgList}
+                            developer={developer}
+                            titleJob={titleJob}
+                            pathName={pathName}
+                            index={index}
+                        />
+                    );
+                })}
             </div>
             <FeedbackComponent />
         </div>

@@ -1,5 +1,16 @@
 import { BagIcon, CakeIcon, CupIcon, FragmentIcon } from '../index';
-import { path } from '../../Features/RouterComponent/config/config';
+
+export const routesPath = {
+    basename: '/',
+    java: '/java',
+    python: '/python',
+    frontend: '/frontend',
+    testing: '/software-testing',
+    teachers: '/teachers',
+    courses: '/courses',
+    online: '/online',
+    offline: '/offline',
+};
 
 export const navBtnList = [
     { id: 5, btnName: 'Курсы' },
@@ -655,22 +666,22 @@ export const onlineAndOfflinePagesContent = {
         {
             developer: 'Front End разработчик',
             titleJob: `Frontend-разработчики создают пользовательские интерфейсы. Это значит, что именно от фронтендера зависит внешний вид сайтов и приложений. Всё, что видят пользователи в интернете, написано фронтендерами.`,
-            pathName: path.frontend,
+            pathName: routesPath.frontend,
         },
         {
             developer: 'Python разработчик',
             titleJob: `На факультете Python вы освоите самый популярный язык программирования. Python чаще всего применяется для веб-разработки, но также может быть отличным инструментом в Data Science и машинном обучении.`,
-            pathName: path.python,
+            pathName: routesPath.python,
         },
         {
             developer: 'Java разработчик',
             titleJob: `На факультете вы изучите Java – самый высокооплачиваемый язык, которым десятки лет пользуются IT-гиганты. Существует множество областей применения Java: от сайтов до Android-приложений и игр. У нас вы получить самые важные практические знания.`,
-            pathName: path.java,
+            pathName: routesPath.java,
         },
         {
             developer: 'QA тестировщик',
             titleJob: `Тестировщик – ответственная и важная должность, несмотря на то что тестирование – самый простой способ попасть в IT. Вы будете писать тесты, чтобы проверить работоспособность IT-продуктов, корректность и отсутствие багов. Благодаря вам пользователям интернета будут доступны качественные приложения и сайты.`,
-            pathName: path.testing,
+            pathName: routesPath.testing,
         },
     ],
 };
