@@ -141,7 +141,7 @@ const CoursePage = ({ course }) => {
                 <Tabs className={styles.wrapper__fifthSection__table} items={tabsList[course]} />
                 <a
                     className={styles.wrapper__fifthSection__btn}
-                    href="https://drive.google.com/file/d/15Mv8OzNhRKFDqlB-ZiOBGL7rX2v4g0m2/view?usp=sharing"
+                    href={coursePageText[course].linkProgram}
                     download
                     target="_blank"
                 >

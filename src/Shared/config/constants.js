@@ -227,6 +227,7 @@ export const coursePageText = {
             three: 'Социальная сеть по типу Instagram',
             four: 'Приложение по заказу с биржи фриланса',
         },
+        linkProgram: 'https://drive.google.com/file/d/1ExEwCJwPkRsIRXXE5Bt6-d8YYQ__KBfW/view?usp=sharing',
     },
     python: {
         courseAbout: `На факультете Python вы освоите самый популярный язык программирования. Python чаще всего применяется для веб-разработки, но также может быть отличным инструментом в Data Science и машинном обучении.`,
@@ -245,6 +246,7 @@ export const coursePageText = {
             three: 'Сервер для университета',
             four: 'Парсер по заказу с биржи фриланса',
         },
+        linkProgram: 'https://drive.google.com/file/d/13bTJn0_Q1mRVZ3Hi3urYa7-75JFLvMPU/view?usp=sharing',
     },
     frontend: {
         courseAbout: `Frontend-разработчики создают пользовательские интерфейсы. Это значит, что именно от фронтендера зависит внешний вид сайтов и приложений. Всё, что видят пользователи в интернете, написано фронтендерами.`,
@@ -264,6 +266,7 @@ export const coursePageText = {
             three: 'сайт для просмотра погоды',
             four: 'сайт по заказу с биржи фриланса',
         },
+        linkProgram: 'https://drive.google.com/file/d/1VuTdEtB1JE77RL-e3lBe31865e7SdqI4/view?usp=sharing',
     },
     testing: {
         courseAbout: `Тестировщик – ответственная и важная должность, несмотря на то что тестирование – самый простой способ попасть в IT. Вы будете писать тесты, чтобы проверить работоспособность IT-продуктов, корректность и отсутствие багов. Благодаря вам пользователям интернета будут доступны качественные приложения и сайты.`,
@@ -282,6 +285,7 @@ export const coursePageText = {
             three: '',
             four: '',
         },
+        linkProgram: 'https://drive.google.com/file/d/112cSDgS1T2Qz5gBoqdZwkBgiHgzsWWkh/view?usp=sharing',
     },
 };
 

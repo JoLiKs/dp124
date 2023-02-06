@@ -4,7 +4,7 @@ import { Social } from '../Header/Social';
 import { Link } from 'react-router-dom';
 import styles from './Footer.module.scss';
 
-export const Footer = () => {
+const Footer = () => {
     return (
         <footer className={styles.wrapper}>
             <TwoStarsIcon className={styles.wrapper__iconOne} />
@@ -40,3 +40,5 @@ export const Footer = () => {
         </footer>
     );
 };
+
+export default Footer;
