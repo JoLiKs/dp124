@@ -1,4 +1,5 @@
 import { CoursePage, CoursesPage, HomePage, OnlineAndOfflinePage, TeachersPage } from '../../../Pages';
+import { Suspense } from 'react';
 
 export const path = {
     basename: '/',
@@ -19,34 +20,67 @@ export const router = [
     },
     {
         path: path.java,
-        element: <CoursePage course={'java'} />,
+
+        element: (
+            <Suspense fallback={'Loading.....'}>
+                <CoursePage course={'java'} />
+            </Suspense>
+        ),
     },
     {
         path: path.python,
-        element: <CoursePage course={'python'} />,
+        element: (
+            <Suspense fallback={'Loading.....'}>
+                <CoursePage course={'python'} />
+            </Suspense>
+        ),
     },
     {
         path: path.testing,
-        element: <CoursePage course={'testing'} />,
+        element: (
+            <Suspense fallback={'Loading.....'}>
+                <CoursePage course={'testing'} />
+            </Suspense>
+        ),
     },
     {
         path: path.frontend,
-        element: <CoursePage course={'frontend'} />,
+        element: (
+            <Suspense fallback={'Loading.....'}>
+                <CoursePage course={'frontend'} />
+            </Suspense>
+        ),
     },
     {
         path: path.teachers,
-        element: <TeachersPage />,
+        element: (
+            <Suspense fallback={'Loading.....'}>
+                <TeachersPage />
+            </Suspense>
+        ),
     },
     {
         path: path.courses,
-        element: <CoursesPage />,
+        element: (
+            <Suspense fallback={'Loading.....'}>
+                <CoursesPage />
+            </Suspense>
+        ),
     },
     {
         path: path.online,
-        element: <OnlineAndOfflinePage typeCourse={'online'} />,
+        element: (
+            <Suspense fallback={'Loading.....'}>
+                <OnlineAndOfflinePage typeCourse={'online'} />
+            </Suspense>
+        ),
     },
     {
         path: path.offline,
-        element: <OnlineAndOfflinePage typeCourse={'offline'} />,
+        element: (
+            <Suspense fallback={'Loading.....'}>
+                <OnlineAndOfflinePage typeCourse={'offline'} />
+            </Suspense>
+        ),
     },
 ];

@@ -9,7 +9,7 @@ import styles from './OnlineAndOfflinePage.module.scss';
 
 const imgList = [frontend, python, java, testing];
 
-export const OnlineAndOfflinePage = ({ typeCourse }) => {
+const OnlineAndOfflinePage = ({ typeCourse }) => {
     return (
         <div className={styles.wrapper}>
             <div className={styles.titleContainer}>
@@ -36,3 +36,5 @@ export const OnlineAndOfflinePage = ({ typeCourse }) => {
         </div>
     );
 };
+
+export default OnlineAndOfflinePage;

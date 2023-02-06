@@ -3,7 +3,7 @@ import { coursesList, OneStarIcon } from '../../Shared';
 import { FeedbackComponent, TeachersBlock } from '../../Features';
 import styles from './TeashersPage.module.scss';
 
-export const TeachersPage = () => {
+const TeachersPage = () => {
     return (
         <div className={styles.container}>
             <h2 className={styles.title}>
@@ -31,3 +31,5 @@ export const TeachersPage = () => {
         </div>
     );
 };
+
+export default TeachersPage;

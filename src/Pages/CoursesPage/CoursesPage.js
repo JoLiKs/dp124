@@ -7,7 +7,7 @@ import onLinePhoto from '../../Shared/img/offlineCoursesPhoto.svg';
 import offLinePhoto from '../../Shared/img/onlineCoursesPhoto.svg';
 import styles from './CoursesPage.module.scss';
 
-export const CoursesPage = () => {
+const CoursesPage = () => {
     return (
         <section style={{ display: 'flex', flexDirection: 'column' }}>
             <h2 className={styles.title}>Курсы</h2>
@@ -68,3 +68,5 @@ export const CoursesPage = () => {
         </section>
     );
 };
+
+export default CoursesPage;

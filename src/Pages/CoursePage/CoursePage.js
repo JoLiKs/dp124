@@ -4,10 +4,10 @@ import photoInfo from './../../Shared/img/photoInfo.svg';
 import cursesImgOne from './../../Shared/img/coursesImgOne.jpg';
 import cursesImgTwo from './../../Shared/img/coursesImgTwo.jpg';
 import { Tabs } from '../../Shared/Tabs/Tabs';
-import { CourseCostBlock, JobOpeningsBlock, RegistrationCourseBlock } from '../../Features';
+import { CourseCostBlock, RegistrationCourseBlock } from '../../Features';
 import styles from './CoursePage.module.scss';
 
-export const CoursePage = ({ course }) => {
+const CoursePage = ({ course }) => {
     const titleCourse = coursesList.find(({ titleKey }) => titleKey === course);
 
     return (
@@ -101,7 +101,14 @@ export const CoursePage = ({ course }) => {
                 <div className={styles.tabsBlock}>
                     <h5>Программа КУРСА</h5>
                     <Tabs items={tabsList[course]} />
-                    <Button color="secondary">Скачать всю программу</Button>
+                    <a
+                        className={styles.downloadLink}
+                        href="https://drive.google.com/file/d/15Mv8OzNhRKFDqlB-ZiOBGL7rX2v4g0m2/view?usp=sharing"
+                        download
+                        target="_blank"
+                    >
+                        <Button color="secondary">Скачать всю программу</Button>
+                    </a>
                 </div>
             </div>
             <div className={styles.CostBlock}>
@@ -111,3 +118,5 @@ export const CoursePage = ({ course }) => {
         </div>
     );
 };
+
+export default CoursePage;
