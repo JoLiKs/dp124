@@ -9,18 +9,16 @@ import styles from './header.module.scss';
 
 export const Header = () => {
     return (
-        <header>
-            <div className={styles.header}>
-                <Link to="/" className={styles.header__logo}>
-                    <LogoIcon />
-                </Link>
-                <NavBar />
-                <a href={`tel: ${tel}`} className={styles.header__tel}>
-                    {tel}
-                </a>
-                <Social className={styles.header__social} />
-                <Button className={styles.header__startBtn}>Начать зарабатывать в IT</Button>
-            </div>
+        <header className={styles.header}>
+            <Link to="/" className={styles.header__logo}>
+                <LogoIcon />
+            </Link>
+            <NavBar />
+            <a href={`tel: ${tel}`} className={styles.header__tel}>
+                {tel}
+            </a>
+            <Social className={styles.header__social} />
+            <Button className={styles.header__startBtn}>Начать зарабатывать в IT</Button>
             <BurgerMenu />
         </header>
     );

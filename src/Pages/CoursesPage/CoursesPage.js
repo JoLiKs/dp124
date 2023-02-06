@@ -9,7 +9,7 @@ import styles from './CoursesPage.module.scss';
 
 export const CoursesPage = () => {
     return (
-        <div>
+        <section style={{ display: 'flex', flexDirection: 'column' }}>
             <h2 className={styles.title}>Курсы</h2>
             <p className={styles.description}>
                 Наша программа разработана ведущими IT-специалистами, которые 4+ года работали с новичками в IT
@@ -47,7 +47,7 @@ export const CoursesPage = () => {
                 </h3>
             </div>
             <div className={styles.wrapper_title_list}>
-                <ul className={styles.list_title}>
+                <ul className={styles.list_title_offline}>
                     <span>Почему вам это подойдет</span>
                     <li>живое взаимодействие с группой</li>
                     <li>больше дисциплины</li>
@@ -65,6 +65,6 @@ export const CoursesPage = () => {
                 <img src={offLinePhoto} alt="офлайн обучение" />
             </figure>
             <FeedbackComponent />
-        </div>
+        </section>
     );
 };

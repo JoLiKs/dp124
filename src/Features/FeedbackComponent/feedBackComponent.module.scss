@@ -1,6 +1,7 @@
 @import './src/App/styles/variables';
 .wrapper {
-    margin: 128px;
+    align-self: center;
+    margin: 128px 0 95px 0;
     &__title {
         position: relative;
         width: 70%;
@@ -30,6 +31,9 @@
         margin: 40px 0 0 0;
         & div {
             display: flex;
+            & input {
+                width: 20px;
+            }
             & label {
                 width: 60%;
                 margin: 0 0 0 10px;

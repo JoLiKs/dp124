@@ -1,13 +1,14 @@
 @import './src/App/styles/variables';
 
 .header {
+    position: relative;
     max-width: 1920px;
     width: 100%;
     min-height: 99px;
     margin: 0 32px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     border-bottom: 1px solid $headerBorder;
     text-align: center;
     color: $black;
@@ -17,11 +18,10 @@
     }
 
     &__logo {
-        margin: 0 25% 0 50px;
-
-        @media (min-width: 1240px) {
-            margin: 0 5% 0 50px;
-        }
+        position: absolute;
+        top: 50%;
+        left: 80px;
+        transform: translate(-50%, -50%);
 
         svg {
             max-width: 50px;
@@ -32,11 +32,12 @@
         font-family: gilroy-medium, sans-serif;
         font-size: 20px;
         color: $black;
+        margin: 0 18px 0 0;
     }
     &__social {
         align-items: center;
         width: 150px;
-        margin: 0 0 0 20px;
+        margin: 0 66px 0 0;
     }
     &__startBtn {
         margin: 0 50px 0 65px;

@@ -15,15 +15,18 @@
     display: flex;
     justify-content: flex-start;
     padding-left: 6%;
-    margin-bottom: 32px;
+    margin: 68px 0 32px 0;
 }
 
 .typeCourse {
     display: flex;
-    font-size: 7rem;
+    font-family: gilroy-semiBold;
+    font-size: 120px;
+    line-height: 120px;
 }
 
 .color {
+    margin: 0 30px 0 0;
     color: $turquoise;
 }
 
@@ -35,10 +38,12 @@
 .arrowLink {
     display: flex;
     justify-content: flex-end;
+    margin: 210px 0 0 0;
     padding: 2% 20%;
 }
 
 .list_title {
+    position: relative;
     font-size: 20px;
     color: $turquoise;
     display: flex;
@@ -47,20 +52,77 @@
         margin: 1% 17%;
     }
     li {
+        position: absolute;
         font-size: 30px;
         color: $grey;
         padding: 0 30px;
         background: url('../../Shared/img/ornament.svg') no-repeat -5px 5px;
         background-size: 30px;
-        &:nth-child(2n + 1) {
-            align-self: flex-end;
+        &:nth-child(2) {
+            top: 150px;
+            left: 630px;
         }
-        &:nth-child(3n + 1) {
-            align-self: center;
+        &:nth-child(3) {
+            top: 260px;
+            left: 230px;
+        }
+        &:nth-child(4) {
+            top: 70px;
+            right: 530px;
+        }
+        &:nth-child(5) {
+            top: 190px;
+            right: 200px;
+        }
+        &:nth-child(6) {
+            top: 350px;
+            left: 530px;
+        }
+        &:nth-child(7) {
+            top: 100px;
+            left: 200px;
         }
     }
 }
-
+.list_title_offline {
+    position: relative;
+    font-size: 20px;
+    color: $turquoise;
+    display: flex;
+    flex-direction: column;
+    span {
+        margin: 1% 17%;
+    }
+    li {
+        position: absolute;
+        font-size: 30px;
+        color: $grey;
+        padding: 0 30px;
+        background: url('../../Shared/img/ornament.svg') no-repeat -5px 5px;
+        background-size: 30px;
+        &:nth-child(2) {
+            top: 100px;
+            left: 100px;
+        }
+        &:nth-child(3) {
+            top: 230px;
+            right: 530px;
+        }
+        &:nth-child(4) {
+            top: 200px;
+            left: 400px;
+        }
+        &:nth-child(5) {
+            top: 60px;
+            right: 260px;
+            width: 660px;
+        }
+        &:nth-child(6) {
+            top: 350px;
+            left: 240px;
+        }
+    }
+}
 .image {
     margin-bottom: 95px;
 }
