@@ -2,12 +2,12 @@ import React from 'react';
 import { Tab } from './Tab/Tab';
 import styles from './Tabs.module.scss';
 import { classNames } from '../helpers';
-export const Tabs = ({ items }) => {
+export const Tabs = ({ items, className }) => {
     const [active, setActive] = React.useState(0);
 
     const openTab = (e) => setActive(+e.target.dataset.index);
     return (
-        <div>
+        <div className={className}>
             <div>
                 {items?.map((n, i) => (
                     <button

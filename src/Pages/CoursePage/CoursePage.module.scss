@@ -16,7 +16,7 @@
                 position: relative;
                 z-index: 10;
                 padding: 0 130px 0 0;
-                font-family: gilroy-semiBold, sans-serif;
+                font-family: gilroy-semiBold;
                 font-size: 80px;
                 line-height: 80px;
             }
@@ -50,34 +50,179 @@
         margin: 75px 0 0 0;
         &__leftBlock {
             display: flex;
+            align-items: flex-end;
+            & figure:nth-child(1) {
+                margin: 0 24px 0 0;
+            }
         }
         &__rightBlock {
+            padding: 30px 0 0 53px;
             &__title {
+                font-family: gilroy-bold;
+                font-size: 20px;
+                line-height: 22px;
+                color: $turquoise;
             }
             &__text {
+                margin: 15px 0 0 0;
+                font-size: 20px;
+                line-height: 22px;
             }
         }
     }
-}
-.tabsBlock {
-    max-width: 1140px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    &__thirdSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 80px 0 0 0;
+        &__title {
+            align-self: flex-start;
+            width: 100%;
+            font-family: gilroy-semiBold;
+            font-size: 120px;
+            line-height: 132px;
+            & span {
+                position: relative;
+                display: block;
+                width: 100%;
+                text-align: right;
+            }
+            &__icon {
+                position: absolute;
+                top: -10px;
+                right: -25px;
+            }
+        }
+        &__infoWrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            &__block {
+                display: grid;
+                grid-template-columns: 40% 10% 50%;
+                width: 100%;
+                &__title {
+                    font-family: gilroy-semiBold;
+                    font-size: 40px;
+                    line-height: 44px;
+                }
+                & span {
+                    padding: 0 0 0 20px;
+                    flex-shrink: 0;
+                    font-family: gilroy-semiBold;
+                    font-size: 20px;
+                    line-height: 22px;
+                    color: $turquoise;
+                }
+                &__text {
+                    flex-shrink: 0;
+                    font-size: 20px;
+                    line-height: 22px;
+                }
+            }
+            &__bord {
+                display: block;
+                width: 95%;
+                height: 2px;
+                margin: 16px 0;
+                background-color: $turquoise;
+                opacity: 0.4;
+            }
+        }
+    }
+    &__fourthSection {
+        display: flex;
+        justify-content: space-between;
+        margin: 88px 0 0 0;
+        width: 100%;
+        &__img {
+        }
+        &__afterCourse {
+            padding: 0 0 0 50px;
+            & ul {
+                margin: 24px 0 16px 0;
+                font-family: gilroy-bold;
+                font-size: 20px;
+                line-height: 22px;
+                color: $turquoise;
+                & li {
+                    font-family: gilroy-regular;
+                    list-style-type: decimal;
+                    color: $black;
+                }
+            }
+        }
+    }
+    &__fifthSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 88px 0 0 0;
+        &__title {
+            margin: 0 0 40px 0;
+            font-family: gilroy-bold;
+            font-size: 46px;
+            line-height: 46px;
+            text-transform: uppercase;
+            & span {
+                margin: 0 0 0 20px;
+                color: $turquoise;
+            }
+        }
+        &__table {
+            width: 100%;
+        }
+        &__btn {
+            margin: 48px 0 0 0;
+            padding: 18px 64px;
+            & button {
+                &::after,
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                }
+                &::after {
+                    transform: rotate(5deg);
+                }
+                &::before {
+                    transform: rotate(-5deg);
+                }
+                &:hover {
+                    border: 1px solid $appBackground;
 
-.CostBlock {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    margin-bottom: 6%;
-}
-
-.downloadLink {
-    max-width: 300px;
-    margin: 40px 0;
-    button {
-        cursor: pointer;
+                    &:after,
+                    &:before {
+                        border: 1px solid $turquoise;
+                        border-radius: 50px;
+                    }
+                }
+            }
+        }
+    }
+    &__sixthSection {
+        position: relative;
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        margin: 100px 0 10% 0;
+        &__twoStarsIcon {
+            position: absolute;
+            top: -50px;
+            left: 400px;
+            width: 145px;
+            height: 109px;
+        }
+        &__oneStarIcon {
+            position: absolute;
+            top: 0;
+            right: 40px;
+            width: 52px;
+            height: 52px;
+            transform: rotate(20deg);
+        }
     }
 }
