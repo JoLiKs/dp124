@@ -34,6 +34,7 @@ export { teachersList } from './config/constants';
 export { coursePageText } from './config/constants';
 export { TeacherCard } from './TeacherCard/TeacherCard';
 export { Input } from './Input/Input';
+export { InputPhone } from './InputPhone/InputPhone';
 export { CheckBox } from './CheckBox/CheckBox';
 export { onlineAndOfflinePagesContent } from './config/constants';
 export { tabsList } from './config/constants';

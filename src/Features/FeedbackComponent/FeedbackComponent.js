@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
-import { BurstStarIcon, Button, CheckBox, Input } from '../../Shared';
+import { BurstStarIcon, Button, CheckBox, Input, InputPhone } from '../../Shared';
 import styles from './feedBackComponent.module.scss';
 
 export const FeedbackComponent = () => {
     const [name, setName] = useState('');
-    const [phoneOrEmail, setPhoneOrEmail] = useState('');
+    const [phone, setPhone] = useState('');
     const [comment, setComment] = useState('');
     const [checkbox, setCheckbox] = useState(false);
 
-    const disabled = !name && !phoneOrEmail && !checkbox;
+    const disabled = !name && !phone && !checkbox;
 
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -26,12 +26,12 @@ export const FeedbackComponent = () => {
             <form onSubmit={handleSubmit}>
                 <div className={styles.wrapper__formInputWrapper}>
                     <Input type="text" legend="Имя*" placeholder="Введите ваше имя" value={name} onChange={setName} />
-                    <Input
-                        type="text"
-                        legend="Номер или E-mail*"
-                        placeholder="Введите Номер или E-mail"
-                        value={phoneOrEmail}
-                        onChange={setPhoneOrEmail}
+                    <InputPhone
+                        type="tel"
+                        legend="Номер телефона*"
+                        value={phone}
+                        onChange={setPhone}
+                        placeholder="375 (xx) xxx xx xx"
                     />
                     <Input
                         type="text"
@@ -45,7 +45,7 @@ export const FeedbackComponent = () => {
                     <CheckBox id="checkbox" checked={checkbox} onChange={setCheckbox}>
                         Я ознакомился с <a href="#>"> договором оферты</a> и согласен на обработку персональных данных
                     </CheckBox>
-                    <Button type="submit" disabled={disabled}>
+                    <Button disabled={disabled} type="submit">
                         Начать зарабатывать в IT
                     </Button>
                 </div>
