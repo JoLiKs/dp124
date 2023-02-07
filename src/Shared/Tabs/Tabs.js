@@ -1,7 +1,8 @@
 import React from 'react';
 import { Tab } from './Tab/Tab';
-import styles from './Tabs.module.scss';
 import { classNames } from '../helpers';
+import styles from './Tabs.module.scss';
+
 export const Tabs = ({ items, className }) => {
     const [active, setActive] = React.useState(0);
 
