@@ -1,4 +1,4 @@
-@import './src/App/styles/variables';
+@import '../../../App/styles/variables';
 .wrapper {
     position: relative;
     width: 55%;
@@ -7,21 +7,21 @@
     &__title {
         margin: 114px 0 0 0;
         width: 95%;
-        font-family: gilroy-medium;
+        font-family: gilroy-medium, sans-serif;
         font-size: 80px;
         line-height: 80px;
     }
     &__text {
         width: 65%;
         margin: 24px 0 0 0;
-        font-family: gilroy-medium;
+        font-family: gilroy-medium, sans-serif;
         font-size: 24px;
         line-height: 24px;
     }
     &__btn {
         margin: 57px 0 0 0;
         padding: 18px 73px;
-        font-family: gilroy-semiBold;
+        font-family: gilroy-semiBold, sans-serif;
         font-size: 20px;
         line-height: 20px;
         cursor: pointer;

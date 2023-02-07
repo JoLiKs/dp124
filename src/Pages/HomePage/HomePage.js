@@ -1,5 +1,5 @@
 import React from 'react';
-import { MainFirstScreen } from '../../Features/MainFirstScreen/MainFirstScreen';
+import { MainFirstScreen } from '../../Features/HomePageScreen/MainFirstScreen/MainFirstScreen';
 import {
     AccordionComponent,
     MainThirdScreen,
@@ -7,7 +7,7 @@ import {
     TeachersScreen,
     FeedbackComponent,
 } from '../../Features';
-import { MainSecondScreen } from '../../Features/MainSecondScreen/MainSecondScreen';
+import { MainSecondScreen } from '../../Features/HomePageScreen/MainSecondScreen/MainSecondScreen';
 import { LazyImage } from '../../Shared';
 import image from '../../Shared/img/photo.webp';
 

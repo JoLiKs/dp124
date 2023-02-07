@@ -7,9 +7,9 @@ export { RegistrationCourseBlock } from './RegistrationCourseBlock/RegistrationC
 export { CourseCostBlock } from './CourseCostBlock/CourseCostBlock';
 export { JobOpeningsBlock } from './JobOpeningsBlock/JobOpeningsBlock';
 export { AccordionComponent } from '../Features/AccordionComponent/AccordionComponent';
-export { MainThirdScreen } from '../Features/MainThirdScreen/MainThirdScreen';
-export { MainFourthScreen } from '../Features/MainFourthScreen/MainFourthScreen';
-export { TeachersScreen } from '../Features/TeachersScreen/TeachersScreen';
+export { MainThirdScreen } from './HomePageScreen/MainThirdScreen/MainThirdScreen';
+export { MainFourthScreen } from './HomePageScreen/MainFourthScreen/MainFourthScreen';
+export { TeachersScreen } from './HomePageScreen/TeachersScreen/TeachersScreen';
 export { FeedbackComponent } from '../Features/FeedbackComponent/FeedbackComponent';
 export { BurgerMenu } from '../Features/BurgerMenu/BurgerMenu';
 

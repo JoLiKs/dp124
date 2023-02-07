@@ -1,7 +1,7 @@
 import React from 'react';
-import { advertisementList } from '../../Shared/config/constants';
+import { advertisementList } from '../../../Shared/config/constants';
 import styles from './mainSecondScreen.module.scss';
-import { ArrowsIcon, BurstStarIcon } from '../../Shared';
+import { ArrowsIcon, BurstStarIcon } from '../../../Shared';
 
 export const MainSecondScreen = () => {
     return (

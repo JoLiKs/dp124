@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { LinkComponent, OneStarIcon, TeacherCard, teachersList } from '../../Shared';
-import { getRndInteger } from '../../Shared/helpers';
+import { LinkComponent, OneStarIcon, TeacherCard, teachersList } from '../../../Shared';
+import { getRndInteger } from '../../../Shared/helpers';
 import { randomMizer } from './config';
 import styles from './TeacherCard.module.scss';
 

@@ -1,8 +1,8 @@
 import React from 'react';
-import { BurstStarIcon } from '../../Shared';
-import photoOne from '../../Shared/img/photoOne.svg';
-import photoTwo from '../../Shared/img/photoTwo.svg';
-import photoThree from '../../Shared/img/photoThree.svg';
+import { BurstStarIcon } from '../../../Shared';
+import photoOne from '../../../Shared/img/photoOne.svg';
+import photoTwo from '../../../Shared/img/photoTwo.svg';
+import photoThree from '../../../Shared/img/photoThree.svg';
 import styles from './MainFourthScreen.module.scss';
 
 export const MainFourthScreen = () => {

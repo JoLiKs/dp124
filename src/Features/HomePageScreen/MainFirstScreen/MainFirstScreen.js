@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Button, OneStarIcon } from '../../Shared';
-import { path } from '../RouterComponent/config/config';
+import { Button, OneStarIcon } from '../../../Shared';
+import { path } from '../../RouterComponent/config/config';
 import styles from './MainFirstScreen.module.scss';
 
 export const MainFirstScreen = () => {

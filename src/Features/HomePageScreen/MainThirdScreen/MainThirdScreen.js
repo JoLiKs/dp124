@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, ComfortIcon, DevelopmentIcon, FreeIcon, GroupStars, ProspectsIcon } from '../../Shared';
+import { Button, ComfortIcon, DevelopmentIcon, FreeIcon, GroupStars, ProspectsIcon } from '../../../Shared';
 import styles from './mainThirdScreen.module.scss';
 
 export const MainThirdScreen = () => {
