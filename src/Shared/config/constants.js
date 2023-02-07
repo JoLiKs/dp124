@@ -277,13 +277,10 @@ export const coursePageText = {
             one: 'Сможете тестировать IT-продукты любой сложности',
             two: 'Будете писать чистый код и знать все тонкости Git',
             three: 'Изучите популярный язык программирования и фреймворки',
-            four: '',
         },
         during: {
             one: 'Оттестированный реальный веб проект',
             two: 'Тестирование приложения с фриланса',
-            three: '',
-            four: '',
         },
         linkProgram: 'https://drive.google.com/file/d/112cSDgS1T2Qz5gBoqdZwkBgiHgzsWWkh/view?usp=sharing',
     },

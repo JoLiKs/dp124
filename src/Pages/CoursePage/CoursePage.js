@@ -120,17 +120,15 @@ const CoursePage = ({ course }) => {
                 <div className={styles.wrapper__fourthSection__afterCourse}>
                     <ul>
                         После курса:
-                        <li>{coursePageText[course].afterCourse.one}</li>
-                        <li>{coursePageText[course].afterCourse.two}</li>
-                        <li>{coursePageText[course].afterCourse.three}</li>
-                        <li>{coursePageText[course].afterCourse.four}</li>
+                        {Object.keys(coursePageText[course].afterCourse).map((key) => (
+                            <li key={key}>{coursePageText[course].afterCourse[key]}</li>
+                        ))}
                     </ul>
                     <ul>
                         В течение курса вы пополните портфолио проектами:
-                        <li>{coursePageText[course].during.one}</li>
-                        <li>{coursePageText[course].during.two}</li>
-                        <li>{coursePageText[course].during.three}</li>
-                        <li>{coursePageText[course].during.four}</li>
+                        {Object.keys(coursePageText[course].during).map((key) => (
+                            <li key={key}>{coursePageText[course].during[key]}</li>
+                        ))}
                     </ul>
                 </div>
             </section>
