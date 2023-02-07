@@ -11,7 +11,7 @@ export const Header = () => {
     return (
         <header className={styles.header}>
             <Link to="/" className={styles.header__logo}>
-                <LogoIcon />
+                <LogoIcon alt="logo" />
             </Link>
             <NavBar />
             <a href={`tel: ${tel}`} className={styles.header__tel}>

@@ -10,8 +10,8 @@ import {
     TwoStarsIcon,
 } from '../../Shared';
 import photoInfo from './../../Shared/img/photoInfo.svg';
-import cursesImgOne from './../../Shared/img/coursesImgOne.jpg';
-import cursesImgTwo from './../../Shared/img/coursesImgTwo.jpg';
+import cursesImgOne from './../../Shared/img/coursesImgOne.webp';
+import cursesImgTwo from './../../Shared/img/coursesImgTwo.webp';
 import { Tabs } from '../../Shared/Tabs/Tabs';
 import { CourseCostBlock, RegistrationCourseBlock } from '../../Features';
 import styles from './CoursePage.module.scss';

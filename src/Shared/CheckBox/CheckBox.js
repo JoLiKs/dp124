@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const CheckBox = ({ id, checked, onChange, label, children, className }) => {
+export const CheckBox = ({ id, checked, onChange, children, className }) => {
     const handleChecked = () => {
         onChange(!checked);
     };

@@ -13,10 +13,10 @@ export const MainFourthScreen = () => {
             </h3>
             <div className={styles.wrapper__topContent}>
                 <figure>
-                    <img width="221" height="251" src={photoOne} alt="" />
+                    <img width="221" height="251" src={photoOne} alt="ты в IT" />
                 </figure>
                 <figure>
-                    <img width="221" height="251" src={photoTwo} alt="" />
+                    <img width="221" height="251" src={photoTwo} alt="ты в IT" />
                 </figure>
                 <ul>
                     <li className={styles.wrapper__topContent__list}>
@@ -33,12 +33,12 @@ export const MainFourthScreen = () => {
                     </li>
                 </ul>
                 <figure>
-                    <img width="221" height="251" src={photoThree} alt="" />
+                    <img width="221" height="251" src={photoThree} alt="ты в IT" />
                 </figure>
             </div>
             <div className={styles.wrapper__bottomContent}>
                 <figure>
-                    <img width="221" height="251" src={photoThree} alt="" />
+                    <img width="221" height="251" src={photoThree} alt="ты в IT" />
                 </figure>
                 <ul>
                     <li className={styles.wrapper__bottomContent__list}>
@@ -55,10 +55,10 @@ export const MainFourthScreen = () => {
                     </li>
                 </ul>
                 <figure>
-                    <img width="221" height="251" src={photoOne} alt="" />
+                    <img width="221" height="251" src={photoOne} alt="ты в IT" />
                 </figure>
                 <figure>
-                    <img width="221" height="251" src={photoTwo} alt="" />
+                    <img width="221" height="251" src={photoTwo} alt="ты в IT" />
                 </figure>
             </div>
         </section>

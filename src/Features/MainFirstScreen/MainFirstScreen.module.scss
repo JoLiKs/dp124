@@ -13,12 +13,11 @@
 .title {
     align-self: flex-start;
     margin: 64px 0 42px 0;
-    font-family: gilroy-semiBold;
+    font-family: gilroy-extraBold, Roboto, sans-serif, monospace;
     font-size: 120px;
     line-height: 120px;
-    //text-align: center;
     &__noOne {
-        font-family: gilroy-extraBold;
+        font-family: gilroy-extraBold, Roboto, monospace;
         color: $turquoise;
         & svg {
             margin: -15px 15px;
@@ -26,16 +25,15 @@
     }
 }
 .text {
-    //margin: 0 0 200px 0;
     padding: 0 200px 0 0;
-    font-family: gilroy-medium;
+    font-family: gilroy-medium, Roboto, monospace;
     font-size: 24px;
     line-height: 24px;
 }
 .btn {
     margin: 57px 0 0 0;
     padding: 18px 73px;
-    font-family: gilroy-semiBold;
+    font-family: gilroy-semiBold, sans-serif;
     font-size: 20px;
     line-height: 20px;
     cursor: pointer;

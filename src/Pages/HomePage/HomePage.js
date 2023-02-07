@@ -8,16 +8,14 @@ import {
     FeedbackComponent,
 } from '../../Features';
 import { MainSecondScreen } from '../../Features/MainSecondScreen/MainSecondScreen';
-
-import image from '../../Shared/img/photo.png';
+import { LazyImage } from '../../Shared';
+import image from '../../Shared/img/photo.webp';
 
 export const HomePage = () => {
     return (
         <>
             <MainFirstScreen />
-            <figure>
-                <img height="100%" width="100%" src={image} alt="" />
-            </figure>
+            <LazyImage src={image} alt="твоя новая профессия в IT" />
             <MainSecondScreen />
             <AccordionComponent />
             <MainThirdScreen />

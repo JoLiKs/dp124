@@ -25,7 +25,7 @@ const Footer = () => {
             <span className={styles.wrapper__border}></span>
             <div className={styles.wrapper__logoSection}>
                 <Link to="/">
-                    <LogoIcon className={styles.logo} />
+                    <LogoIcon alt="logo" className={styles.logo} />
                 </Link>
                 <p className={styles.wrapper__logoSection__text}>© 2023 Все права защищены.</p>
             </div>

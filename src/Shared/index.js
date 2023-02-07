@@ -1,3 +1,5 @@
+import { lazy } from 'react';
+
 export { ReactComponent as LogoIcon } from './img/logo.svg';
 export { ReactComponent as FacebookIcon } from './img/faceboock.svg';
 export { ReactComponent as InstagramIcon } from './img/instagram.svg';
@@ -21,6 +23,8 @@ export { ReactComponent as ArrowsIcon } from './img/arrows.svg';
 export { ReactComponent as TwoStarsIcon } from './img/twoStars.svg';
 export { ReactComponent as GroupStars } from './img/groupStars.svg';
 export { ReactComponent as BurgerIcon } from './img/burger-menu.svg';
+
+export const LazyImage = lazy(() => import('./Image/Image'));
 
 export { Accordion } from './Accordion/Accordion';
 export { accordionTitle } from './config/constants';

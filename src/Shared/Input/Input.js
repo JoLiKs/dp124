@@ -14,7 +14,6 @@ export const Input = ({ legend, placeholder, type, value, onChange }) => {
                 value={value}
                 className={styles.input}
                 type={type}
-                id={type}
                 placeholder={placeholder}
                 autoComplete="off"
             />
