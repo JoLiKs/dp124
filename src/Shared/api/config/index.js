@@ -1,5 +1,7 @@
-export const sendRequest = async ({ baseUrl, path, method, body, headers }) => {
-    const requestUrl = `${baseUrl}/${path}`;
+export const BASE_URL = 'http://178.172.138.15:8089';
+
+export const sendRequest = async ({ path, method, body, headers }) => {
+    const requestUrl = `${BASE_URL}/${path}`;
     const options = {
         method,
         headers: {
@@ -16,7 +18,7 @@ export const sendRequest = async ({ baseUrl, path, method, body, headers }) => {
 
     const contentType = response.headers.get('Content-Type');
 
-    if (contentType.includes('application/json')) {
+    if (contentType.includes('application/json' || 'multipart/form-data')) {
         return response;
     } else {
         throw new Error('Не тот формат данных');

@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { BurstStarIcon, Button, CheckBox, Input, InputPhone } from '../../Shared';
+import { validateFormData } from '../../Shared/helpers';
+import { sendContactsService } from '../../Shared/api';
 import styles from './feedBackComponent.module.scss';
 
 export const FeedbackComponent = () => {
@@ -7,11 +9,32 @@ export const FeedbackComponent = () => {
     const [phone, setPhone] = useState('');
     const [comment, setComment] = useState('');
     const [checkbox, setCheckbox] = useState(false);
+    const [error, setError] = useState(null);
 
     const disabled = !name && !phone && !checkbox;
 
-    const handleSubmit = (event) => {
+    const handleSubmit = async (event) => {
         event.preventDefault();
+        const validateError = validateFormData(name, phone);
+        if (!validateError) {
+            const formData = new FormData();
+            formData.append('name', name);
+            formData.append('contact', phone);
+            formData.append('comment', comment);
+            //   sendContactsService('clients', formData);
+        } else {
+            setError(validateError);
+        }
+
+        // const data = await fetch('http://178.172.138.15:8089/clients', {
+        //     method: 'POST',
+        //     body: formData,
+        //     headers: {
+        //         'Content-Type': 'multipart/form-data',
+        //         mode: 'no-cors',
+        //     },
+        // });
+        // console.log(data);
     };
 
     return (
@@ -45,7 +68,7 @@ export const FeedbackComponent = () => {
                     <CheckBox id="checkbox" checked={checkbox} onChange={setCheckbox}>
                         Я ознакомился с <a href="#>"> договором оферты</a> и согласен на обработку персональных данных
                     </CheckBox>
-                    <Button disabled={disabled} type="submit">
+                    <Button className={styles.btnSubmit} disabled={disabled} type="submit">
                         Начать зарабатывать в IT
                     </Button>
                 </div>
