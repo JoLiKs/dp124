@@ -2,7 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './DeveloperTitleBlock.module.scss';
 
-export const DeveloperTitleBlock = ({ developer, titleJob, pathName, imgList, index }) => {
+export const DeveloperTitleBlock = ({ developer, titleJob, pathName, imgList, index, filtredTypesArray }) => {
+    const dateStart = filtredTypesArray.find(({ faculty }) => faculty === developer.split(' ')[0].toLowerCase());
+
     const content =
         index % 2 === 0 ? (
             <>
@@ -12,7 +14,7 @@ export const DeveloperTitleBlock = ({ developer, titleJob, pathName, imgList, in
                 <div className={styles.textBlock}>
                     <h3 className={styles.title}>{developer}</h3>
                     <p className={styles.description}>{titleJob}</p>
-                    <h4>Старт ближайшего курса: 20 февраля</h4>
+                    <h4>Старт ближайшего курса: {dateStart?.start || ''}</h4>
                     <span className={styles.link}>
                         <Link to={pathName}>Подробнее</Link>
                     </span>
@@ -23,7 +25,7 @@ export const DeveloperTitleBlock = ({ developer, titleJob, pathName, imgList, in
                 <div className={styles.textBlock}>
                     <h3 className={styles.title}>{developer}</h3>
                     <p className={styles.description}>{titleJob}</p>
-                    <h4>Старт ближайшего курса: 20 февраля</h4>
+                    <h4>Старт ближайшего курса: {dateStart?.start || ''}</h4>
                     <span className={styles.link}>
                         <Link to={pathName}>Подробнее</Link>
                     </span>

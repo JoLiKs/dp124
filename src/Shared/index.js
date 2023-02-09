@@ -42,3 +42,4 @@ export { InputPhone } from './InputPhone/InputPhone';
 export { CheckBox } from './CheckBox/CheckBox';
 export { onlineAndOfflinePagesContent } from './config/constants';
 export { tabsList } from './config/constants';
+export { ToggleSwitch } from './ToggleSwitch/ToggleSwitch';

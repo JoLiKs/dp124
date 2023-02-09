@@ -1,0 +1,56 @@
+@import 'src/App/styles/variables';
+
+.toggle_switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+
+    input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 30px;
+        background-color: grey;
+        transition: background-color 0.2s ease-in-out;
+
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 3px;
+            top: 3px;
+            width: 17px;
+            height: 17px;
+            background-color: white;
+            border-radius: 50%;
+            transform: translateX(0);
+            transition: transform 0.2s ease-in-out;
+        }
+    }
+
+    input:checked + label {
+        background-color: $turquoise;
+
+        &:after {
+            transform: translateX(27px);
+        }
+    }
+}
+
+.label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px;
+    font-size: 12.5px;
+    font-weight: 600;
+}
