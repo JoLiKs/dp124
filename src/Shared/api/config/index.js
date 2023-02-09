@@ -10,17 +10,5 @@ export const sendRequest = async ({ path, method, body, headers }) => {
         body: body,
     };
 
-    if (method === 'POST' || method === 'PUT') {
-        options.body = JSON.stringify(body);
-    }
-
-    const response = await fetch(requestUrl, options);
-
-    const contentType = response.headers.get('Content-Type');
-
-    if (contentType.includes('application/json' || 'multipart/form-data')) {
-        return response;
-    } else {
-        throw new Error('Не тот формат данных');
-    }
+    return await fetch(requestUrl, options);
 };

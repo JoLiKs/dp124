@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { BurstStarIcon, Button, CheckBox, Input, InputPhone } from '../../Shared';
-import { validateFormData } from '../../Shared/helpers';
+import { classNames, validateFormData } from '../../Shared/helpers';
 import { sendContactsService } from '../../Shared/api';
 import styles from './feedBackComponent.module.scss';
 
@@ -9,9 +9,8 @@ export const FeedbackComponent = () => {
     const [phone, setPhone] = useState('');
     const [comment, setComment] = useState('');
     const [checkbox, setCheckbox] = useState(false);
-    const [error, setError] = useState(null);
-
-    const disabled = !name && !phone && !checkbox;
+    const [isDisabled, setIsDisabled] = useState(true);
+    const [messages, setMessages] = useState({ text: '', isError: true });
 
     const handleSubmit = async (event) => {
         event.preventDefault();
@@ -21,21 +20,42 @@ export const FeedbackComponent = () => {
             formData.append('name', name);
             formData.append('contact', phone);
             formData.append('comment', comment);
-            //   sendContactsService('clients', formData);
-        } else {
-            setError(validateError);
-        }
+            setIsDisabled(true);
+            const data = await sendContactsService('clients', formData);
 
-        // const data = await fetch('http://178.172.138.15:8089/clients', {
-        //     method: 'POST',
-        //     body: formData,
-        //     headers: {
-        //         'Content-Type': 'multipart/form-data',
-        //         mode: 'no-cors',
-        //     },
-        // });
-        // console.log(data);
+            if (data?.status < 400) {
+                setIsDisabled(false);
+                setPhone('');
+                setName('');
+                setComment('');
+                setCheckbox(false);
+                setMessages({ text: 'Спасибо наши менеджеры свяжется с вами в ближайшее время', isError: false });
+            }
+        } else {
+            setMessages({ text: validateError, isError: true });
+        }
     };
+
+    useEffect(() => {
+        if (messages.isError) {
+            setMessages({ text: '', isError: true });
+        }
+        if (!!name && !!phone && !!checkbox) {
+            setIsDisabled(false);
+        } else {
+            setIsDisabled(true);
+        }
+    }, [name, phone, checkbox]);
+
+    useEffect(() => {
+        let clear = null;
+        if (!messages.isError) {
+            clear = setTimeout(() => {
+                setMessages({ text: '', isError: false });
+            }, 3000);
+        }
+        return () => clearTimeout(clear);
+    }, [messages.isError]);
 
     return (
         <section className={styles.wrapper}>
@@ -64,11 +84,21 @@ export const FeedbackComponent = () => {
                         onChange={setComment}
                     />
                 </div>
+                {messages.text && (
+                    <div
+                        className={classNames({
+                            [styles.errorMessage]: messages.isError,
+                            [styles.successMessage]: !messages.isError,
+                        })}
+                    >
+                        {messages.text}
+                    </div>
+                )}
                 <div className={styles.wrapper__formSubmitWrapper}>
                     <CheckBox id="checkbox" checked={checkbox} onChange={setCheckbox}>
                         Я ознакомился с <a href="#>"> договором оферты</a> и согласен на обработку персональных данных
                     </CheckBox>
-                    <Button className={styles.btnSubmit} disabled={disabled} type="submit">
+                    <Button className={styles.btnSubmit} disabled={isDisabled} type="submit">
                         Начать зарабатывать в IT
                     </Button>
                 </div>
