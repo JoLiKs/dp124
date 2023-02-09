@@ -13,7 +13,7 @@ export const Header = () => {
             <Link to="/" className={styles.header__logo}>
                 <LogoIcon alt="logo" />
             </Link>
-            <NavBar />
+            <NavBar className={styles.header__navBar} />
             <a href={`tel: ${tel}`} className={styles.header__tel}>
                 {tel}
             </a>

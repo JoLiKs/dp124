@@ -15,17 +15,28 @@ export const BurgerMenu = () => {
 
     return (
         <div className={stylesBurger.burger_container}>
-            <button className={stylesBurger.burger_btn} onClick={handleOpen}>
-                {open ? <PlusIcon /> : <BurgerIcon />}
-            </button>
+            <div className={stylesBurger.burger_btn} onClick={handleOpen}>
+                {open ? (
+                    <div className={stylesBurger.burger_container_btn_close}>
+                        <span></span>
+                        <span></span>
+                    </div>
+                ) : (
+                    <div className={stylesBurger.burger_container_btn_open}>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                )}
+            </div>
             {open && (
-                <div>
-                    <NavBar />
-                    <a href={`tel: ${tel}`} className={styles.header__tel}>
+                <div className={stylesBurger.burger_container_menu}>
+                    <NavBar className={stylesBurger.burger_container_menu_navBar} />
+                    <a href={`tel: ${tel}`} className={stylesBurger.burger_container_menu_tel}>
                         {tel}
                     </a>
-                    <Social className={styles.header__social} />
-                    <Button className={styles.header__startBtn}>Начать зарабатывать в IT</Button>
+                    <Social className={stylesBurger.burger_container_menu_social} />
+                    <Button className={stylesBurger.burger_container_menu_startBtn}>Начать зарабатывать в IT</Button>
                 </div>
             )}
         </div>

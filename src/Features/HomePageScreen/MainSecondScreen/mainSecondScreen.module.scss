@@ -3,6 +3,18 @@
     width: 55%;
     min-width: 1120px;
     margin: 76px 0 84px 0;
+    @media only screen and (min-width: 320px) and (max-width: 375px) {
+        width: 100%;
+        min-width: 100%;
+        margin: 37px 0 56px 0;
+        padding: 0 10px;
+    }
+    @media only screen and (min-width: 375px) and (max-width: 480px) {
+        width: 100%;
+        min-width: 100%;
+        margin: 37px 0 56px 0;
+        padding: 0 10px;
+    }
     &__titleBlock {
         position: relative;
         &__title {
@@ -15,10 +27,30 @@
             font-size: 40px;
             line-height: 40px;
             color: $black;
+            @media only screen and (min-width: 320px) and (max-width: 375px) {
+                padding: 0 30px 0 0;
+                width: 100%;
+                font-size: 24px;
+                line-height: 24px;
+            }
+            @media only screen and (min-width: 375px) and (max-width: 480px) {
+                padding: 0 30px 0 0;
+                width: 100%;
+                font-size: 24px;
+                line-height: 24px;
+            }
             & svg {
                 position: absolute;
                 top: -25px;
                 right: 35px;
+                @media only screen and (min-width: 320px) and (max-width: 375px) {
+                    width: 26px;
+                    height: 26px;
+                }
+                @media only screen and (min-width: 375px) and (max-width: 480px) {
+                    width: 26px;
+                    height: 26px;
+                }
             }
         }
         & span {
@@ -27,11 +59,29 @@
             height: 2px;
             margin: 32px 0 0 0;
             background-color: $borderColor;
+            @media only screen and (min-width: 320px) and (max-width: 375px) {
+                position: absolute;
+                top: 150px;
+                left: 10px;
+                width: 280px;
+            }
+            @media only screen and (min-width: 375px) and (max-width: 480px) {
+                position: absolute;
+                top: 150px;
+                left: 10px;
+                width: 345px;
+            }
         }
     }
     &__infoContainer {
         display: flex;
         margin: 32px 0 0 0;
+        @media only screen and (min-width: 320px) and (max-width: 375px) {
+            flex-direction: column;
+        }
+        @media only screen and (min-width: 375px) and (max-width: 480px) {
+            flex-direction: column;
+        }
         &__leftBlock {
             position: relative;
             width: 50%;
@@ -40,17 +90,51 @@
                 font-size: 30px;
                 line-height: 30px;
                 color: $black;
+                @media only screen and (min-width: 320px) and (max-width: 375px) {
+                    padding: 0 30px 0 0;
+                    font-size: 10px;
+                    line-height: 10px;
+                }
+                @media only screen and (min-width: 375px) and (max-width: 480px) {
+                    padding: 0 30px 0 0;
+                    font-size: 10px;
+                    line-height: 10px;
+                }
                 & span {
                     margin: 0 15px;
                     font-family: gilroy-semiBold, sans-serif;
                     font-size: 60px;
                     line-height: 60px;
+                    @media only screen and (min-width: 320px) and (max-width: 375px) {
+                        position: absolute;
+                        top: -7px;
+                        right: -130px;
+                        font-size: 45px;
+                        line-height: 45px;
+                    }
+                    @media only screen and (min-width: 375px) and (max-width: 480px) {
+                        position: absolute;
+                        top: -7px;
+                        right: -130px;
+                        font-size: 45px;
+                        line-height: 45px;
+                    }
                 }
             }
             & svg {
                 position: absolute;
                 top: 55px;
                 left: 155px;
+                @media only screen and (min-width: 320px) and (max-width: 375px) {
+                    top: 125px;
+                    left: -65px;
+                    width: 375px;
+                }
+                @media only screen and (min-width: 375px) and (max-width: 480px) {
+                    top: 125px;
+                    left: -65px;
+                    width: 375px;
+                }
             }
         }
         &__rightBlock {
@@ -60,6 +144,16 @@
             row-gap: 50px;
             column-gap: 93px;
             width: 50%;
+            @media only screen and (min-width: 320px) and (max-width: 375px) {
+                grid-template-columns: 1fr;
+                width: 100%;
+                margin: 43px 0 0 0;
+            }
+            @media only screen and (min-width: 375px) and (max-width: 480px) {
+                grid-template-columns: 1fr;
+                width: 100%;
+                margin: 43px 0 0 0;
+            }
             &__info {
                 text-align: center;
                 &__text {
@@ -68,6 +162,16 @@
                     font-family: gilroy-regular, sans-serif;
                     font-size: 20px;
                     line-height: 20px;
+                    @media only screen and (min-width: 320px) and (max-width: 375px) {
+                        padding: 0 65px;
+                        font-size: 10px;
+                        line-height: 10px;
+                    }
+                    @media only screen and (min-width: 375px) and (max-width: 480px) {
+                        padding: 0 65px;
+                        font-size: 15px;
+                        line-height: 15px;
+                    }
                 }
             }
         }

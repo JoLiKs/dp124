@@ -2,11 +2,12 @@ import React from 'react';
 import { ArrowIcon, coursesList, navBtnList } from '../../../Shared';
 import { Link } from 'react-router-dom';
 import { path } from '../../RouterComponent/config/config';
+import { classNames } from '../../../Shared/helpers';
 import styles from './NavBar.module.scss';
 
-export const NavBar = () => {
+export const NavBar = ({ className }) => {
     return (
-        <nav className={styles.nav_container}>
+        <nav className={classNames({ [styles.nav_container]: true, [className]: true })}>
             <Link to={path.courses} color="primary" className={`${styles.link} ${styles.arrowIcon}`}>
                 {navBtnList[0].btnName} <ArrowIcon />
             </Link>
