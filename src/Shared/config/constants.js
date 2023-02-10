@@ -123,7 +123,7 @@ export const teachersList = {
             firstName: 'Виталий',
             lastName: 'Масленик',
             teacher: 'Frontend-разработчик',
-            photo: 'https://downloader.disk.yandex.ru/preview/f013c82d3c63ee0bc6ce503fdf41ab02578ea9f128ae2a8d583136290eb61d61/63e64b56/Pd-i1aj0GzWtpM8XvjQ3dstoX4VGbA1JaISzwboEsz6TAJoz6WdkHXateIA88VVpFxcKsp3rJPb0_lSKqgQ_yg%3D%3D?uid=0&filename=IMG_20230210_124802_564.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=0&tknv=v2&size=2048x2048',
+            photo: 'https://github.com/vitaliy-maslionik-idf/photo/blob/main/image-0-02-2.jpg?raw=true',
             title: `Ведущий front-end разработчик с многолетним опытом. Разрабатывает на фреймворке react js. Уже более 3-лет преподает в различных школах города Минска и ближнего зарубежья. Имеет более 30 устроившихся выпускников.`,
         },
     ],
