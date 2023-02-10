@@ -1,8 +1,8 @@
 @import './src/App/styles/variables';
 
 .header {
+    padding-right: 72px;
     position: relative;
-    width: 100%;
     max-width: 1920px;
     min-height: 99px;
     margin: 0 32px;
@@ -12,6 +12,15 @@
     border-bottom: 1px solid $headerBorder;
     text-align: center;
     color: $black;
+
+    @media (max-width: 1500px) {
+        padding-right: 30px;
+    }
+
+    @media (max-width: 1200px) {
+        padding-right: 0;
+    }
+
     @media only screen and (min-width: 320px) and (max-width: 375px) {
         width: 100%;
         max-width: 375px;
@@ -30,6 +39,11 @@
         top: 50%;
         left: 80px;
         transform: translate(-50%, -50%);
+
+        @media (max-width: 1280px) {
+            left: 40px;
+        }
+
         @media only screen and (min-width: 320px) and (max-width: 375px) {
             top: 20px;
             left: 20px;
@@ -55,10 +69,13 @@
         }
     }
     &__tel {
-        font-family: gilroy-medium;
+        font-family: gilroy-medium, sans-serif;
         font-size: 20px;
         color: $black;
         margin: 0 18px 0 0;
+        @media (max-width: 986px) {
+            display: none;
+        }
         @media only screen and (min-width: 320px) and (max-width: 375px) {
             display: none;
         }
@@ -70,6 +87,14 @@
         align-items: center;
         width: 150px;
         margin: 0 66px 0 0;
+        @media (max-width: 1500px) {
+            margin: 0 20px 0 0;
+        }
+
+        @media (max-width: 1150px) {
+            display: none;
+        }
+
         @media only screen and (min-width: 320px) and (max-width: 375px) {
             display: none;
         }
@@ -81,6 +106,10 @@
         margin: 0 50px 0 65px;
         padding: 10px 30px;
         font-family: gilroy-medium, sans-serif;
+        @media (max-width: 1500px) {
+            margin: 0 20px 0 0;
+        }
+
         @media only screen and (min-width: 320px) and (max-width: 375px) {
             display: none;
         }

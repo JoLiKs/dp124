@@ -21,18 +21,18 @@
 .title {
     align-self: flex-start;
     margin: 64px 0 42px 0;
-    font-family: gilroy-extraBold;
-    font-size: 120px;
+    font-family: gilroy-extraBold, sans-serif;
+    font-size: calc(40px + (120 - 60) * ((100vw - 320px) / (1600 - 375)));
     line-height: 120px;
     @media only screen and (min-width: 320px) and (max-width: 375px) {
         margin: 17px 0 10px 0;
-        font-family: gilroy-semiBold;
+        font-family: gilroy-semiBold, sans-serif;
         font-size: 35px;
         line-height: 38px;
     }
     @media only screen and (min-width: 375px) and (max-width: 480px) {
         margin: 17px 0 10px 0;
-        font-family: gilroy-semiBold;
+        font-family: gilroy-semiBold, sans-serif;
         font-size: 35px;
         line-height: 30px;
     }
