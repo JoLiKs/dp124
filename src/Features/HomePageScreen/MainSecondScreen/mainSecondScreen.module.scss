@@ -7,13 +7,13 @@
         width: 100%;
         min-width: 100%;
         margin: 37px 0 56px 0;
-        padding: 0 10px;
+        padding: 0 5px;
     }
     @media only screen and (min-width: 375px) and (max-width: 480px) {
         width: 100%;
         min-width: 100%;
         margin: 37px 0 56px 0;
-        padding: 0 10px;
+        padding: 0 5px;
     }
     &__titleBlock {
         position: relative;
@@ -152,7 +152,7 @@
             @media only screen and (min-width: 375px) and (max-width: 480px) {
                 grid-template-columns: 1fr;
                 width: 100%;
-                margin: 43px 0 0 0;
+                margin: 70px 0 0 0;
             }
             &__info {
                 text-align: center;

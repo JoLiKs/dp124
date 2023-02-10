@@ -19,16 +19,37 @@
     &__wrapper {
         width: 278px;
         height: 333px;
-        padding: 0 1rem;
+        padding: 1.5rem 1rem;
         border: 1px solid $black;
         border-radius: 20px;
+        @media only screen and (min-width: 320px) and (max-width: 375px) {
+            width: 212px;
+            height: 253px;
+            font-size: 10px;
+            line-height: 11px;
+        }
+        @media only screen and (min-width: 375px) and (max-width: 480px) {
+            width: 300px;
+            height: 340px;
+            font-size: 12px;
+            line-height: 14px;
+        }
         &__teacherName {
             font-size: 1.25rem;
             text-align: center;
             margin-bottom: 0.5rem;
+            @media only screen and (min-width: 320px) and (max-width: 375px) {
+                font-size: 16px;
+                line-height: 18px;
+            }
+            @media only screen and (min-width: 375px) and (max-width: 480px) {
+                font-size: 20px;
+                line-height: 24px;
+            }
         }
         &__teacherFaculty {
             font-size: 1.15rem;
+            line-height: 1.15rem;
             text-align: center;
             margin-bottom: 1rem;
         }
@@ -37,6 +58,14 @@
         position: absolute;
         z-index: -10;
         border-radius: 2rem;
+        @media only screen and (min-width: 320px) and (max-width: 375px) {
+            width: 212px;
+            height: 253px;
+        }
+        @media only screen and (min-width: 375px) and (max-width: 480px) {
+            width: 300px;
+            height: 340px;
+        }
     }
 
     @media (max-width: 605px) {

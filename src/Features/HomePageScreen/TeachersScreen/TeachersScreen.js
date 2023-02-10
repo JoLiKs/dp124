@@ -16,8 +16,8 @@ export const TeachersScreen = () => {
     return (
         <section className={styles.wrapper}>
             <h2 className={styles.wrapper__title}>
-                Преподаватели
                 <OneStarIcon className={styles.wrapper__title__icon} />
+                Преподаватели
             </h2>
             <p className={styles.wrapper__text}>
                 Разработчики с 4+ годами опыта, которые уже помогли стать программистом сотням начинающих айтишников.

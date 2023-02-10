@@ -3,6 +3,15 @@
     width: 55%;
     min-width: 1120px;
     margin: 50px 0 0 0;
+    @media only screen and (min-width: 320px) and (max-width: 375px) {
+        //display: none;
+        min-width: 100%;
+        margin: 34px 0 0 0;
+    }
+    @media only screen and (min-width: 375px) and (max-width: 480px) {
+        min-width: 100%;
+        margin: 34px 0 0 0;
+    }
     &__title {
         position: relative;
         margin: 0 0 24px 0;
@@ -10,16 +19,40 @@
         font-family: gilroy-medium, sans-serif;
         font-size: 40px;
         line-height: 40px;
+        @media only screen and (min-width: 320px) and (max-width: 375px) {
+            font-size: 24px;
+            line-height: 24px;
+        }
+        @media only screen and (min-width: 375px) and (max-width: 480px) {
+            font-size: 24px;
+            line-height: 24px;
+        }
         & svg {
             position: absolute;
             top: -30px;
             right: -60px;
+            @media only screen and (min-width: 320px) and (max-width: 375px) {
+                top: -20px;
+                right: -40px;
+                width: 40px;
+                height: 40px;
+            }
+            @media only screen and (min-width: 375px) and (max-width: 480px) {
+            }
         }
     }
     &__topContent,
     &__bottomContent {
         display: grid;
         grid-column-gap: 32px;
+        @media only screen and (min-width: 320px) and (max-width: 375px) {
+            & figure img {
+                width: 114px;
+                height: 132px;
+            }
+        }
+        @media only screen and (min-width: 375px) and (max-width: 480px) {
+        }
         ul {
             padding: 10px 0 0 0;
             & li {
@@ -27,20 +60,81 @@
                 padding: 0 0 0 30px;
                 background: url('../../../Shared/img/ornament.svg') no-repeat 0 0;
                 cursor: pointer;
+                @media only screen and (min-width: 320px) and (max-width: 375px) {
+                    margin: 0 0 8px 0;
+                    padding: 0 0 0 15px;
+                    font-size: 10px;
+                    line-height: 10px;
+                    background: url('../../../Shared/img/smallOrnament.svg') no-repeat 0 0;
+                }
+                @media only screen and (min-width: 375px) and (max-width: 480px) {
+                    margin: 0 0 12px 0;
+                    padding: 0 0 0 15px;
+                    font-size: 12px;
+                    line-height: 12px;
+                    background: url('../../../Shared/img/smallOrnament.svg') no-repeat 0 0;
+                }
             }
         }
     }
     &__topContent {
+        position: relative;
         grid-template-columns: 1fr 1fr 360px 1fr;
-        &__list:hover {
-            color: $turquoise;
+        @media only screen and (min-width: 320px) and (max-width: 375px) {
+            grid-template-columns: 160px 114px;
+        }
+        @media only screen and (min-width: 375px) and (max-width: 480px) {
+            grid-template-columns: 160px 114px;
+        }
+        &__itemOne {
+            order: 2;
+        }
+        &__itemTwo {
+            display: none;
+            order: 3;
+        }
+        &__itemThree {
+            order: 1;
+            &__list:hover {
+                color: $turquoise;
+            }
+        }
+        &__itemFour {
+            position: relative;
+            left: 25px;
+            order: 4;
         }
     }
     &__bottomContent {
+        position: relative;
         margin: 24px 0 0 0;
         grid-template-columns: 1fr 360px 1fr 1fr;
-        &__list:hover {
-            color: $turquoise;
+        @media only screen and (min-width: 320px) and (max-width: 375px) {
+            grid-template-columns: 114px 160px;
+            margin: 0;
+        }
+        @media only screen and (min-width: 375px) and (max-width: 480px) {
+            grid-template-columns: 114px 160px;
+            margin: 0;
+        }
+        &__itemOne {
+            position: absolute;
+            top: -135px;
+            left: 170px;
+            order: 1;
+        }
+        &__itemTwo {
+            order: 3;
+            &__list:hover {
+                color: $turquoise;
+            }
+        }
+        &__itemThree {
+            order: 2;
+        }
+        &__itemFour {
+            display: none;
+            order: 4;
         }
     }
 }
