@@ -15,7 +15,7 @@ const OnlineAndOfflinePage = ({ typeCourse }) => {
 
     const formatCourses = typeCourse === 'offline' ? 'ofline' : typeCourse;
 
-    const filtredTypesArray = courses.flat().filter(({ format }) => format === formatCourses);
+    const filtredTypesArray = courses?.filter(({ format }) => format === formatCourses);
 
     return (
         <div className={styles.wrapper}>

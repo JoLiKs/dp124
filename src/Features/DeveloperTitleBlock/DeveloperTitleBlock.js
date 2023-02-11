@@ -14,7 +14,7 @@ export const DeveloperTitleBlock = ({ developer, titleJob, pathName, imgList, in
                 <div className={styles.textBlock}>
                     <h3 className={styles.title}>{developer}</h3>
                     <p className={styles.description}>{titleJob}</p>
-                    <h4>Старт ближайшего курса: {dateStart?.start || ''}</h4>
+                    <h4>Старт ближайшего курса: {dateStart?.start || 'Уточняйте по телефону'}</h4>
                     <span className={styles.link}>
                         <Link to={pathName}>Подробнее</Link>
                     </span>
@@ -25,7 +25,7 @@ export const DeveloperTitleBlock = ({ developer, titleJob, pathName, imgList, in
                 <div className={styles.textBlock}>
                     <h3 className={styles.title}>{developer}</h3>
                     <p className={styles.description}>{titleJob}</p>
-                    <h4>Старт ближайшего курса: {dateStart?.start || ''}</h4>
+                    <h4>Старт ближайшего курса: {dateStart?.start || 'Уточняйте по телефону'}</h4>
                     <span className={styles.link}>
                         <Link to={pathName}>Подробнее</Link>
                     </span>

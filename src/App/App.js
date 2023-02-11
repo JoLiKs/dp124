@@ -22,7 +22,7 @@ export const App = () => {
 
     return (
         <BrowserRouter>
-            <CoursesContext.Provider value={[coursesDate]}>
+            <CoursesContext.Provider value={coursesDate || []}>
                 <Header />
                 <Suspense fallback="Loading.........">
                     <main className={styles.layout}>

@@ -5,7 +5,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 32px 182px 30px 275px;
+    padding: 32px 15% 30px 10%;
     background: $black;
     color: $white;
     @media only screen and (min-width: 320px) and (max-width: 375px) {
@@ -83,7 +83,7 @@
         align-items: center;
         justify-content: space-between;
         margin: 40px 0 0 0;
-        width: 400px;
+        max-width: 400px;
         @media only screen and (min-width: 320px) and (max-width: 375px) {
             position: absolute;
             top: 16px;
@@ -137,6 +137,7 @@
         }
     }
     &__rightSection {
+        max-width: 40%;
         @media only screen and (min-width: 320px) and (max-width: 375px) {
             width: 100%;
         }
@@ -161,7 +162,7 @@
         &__text {
             width: 520px;
             margin: 10px 0 0 0;
-            font-family: gilroy-regular;
+            font-family: gilroy-regular, sans-serif;
             font-size: 16px;
             line-height: 19px;
             @media only screen and (min-width: 320px) and (max-width: 375px) {

@@ -14,7 +14,7 @@ const objMap = {
 
 export const RegistrationCourseBlock = ({ course }) => {
     const courses = useContext(CoursesContext);
-
+    console.log(courses);
     const [name, setName] = useState('');
     const [phone, setPhone] = useState('');
     const [checkbox, setCheckbox] = useState(false);
@@ -25,10 +25,10 @@ export const RegistrationCourseBlock = ({ course }) => {
 
     const courseFormat = isChecked ? 'online' : 'ofline';
 
-    const findCourse = courses.flat().filter(({ faculty }) => faculty === objMap[course]);
-    const onOrOff = findCourse.find(({ format }) => format === courseFormat);
+    const findCourse = courses?.filter(({ faculty }) => faculty === objMap[course]);
+    const onOrOff = findCourse?.find(({ format }) => format === courseFormat);
 
-    const graphic = onOrOff?.grafic?.split(' ');
+    const graphic = onOrOff?.grafic.split(' ') || '';
 
     const handleSubmit = async (event) => {
         event.preventDefault();
@@ -73,7 +73,6 @@ export const RegistrationCourseBlock = ({ course }) => {
         }
         return () => clearTimeout(clear);
     }, [messages.isError]);
-    //Понедельник, 19:00-22:00 Четверг, 19:00-22:00
     return (
         <div className={styles.container}>
             <h3 className={styles.container__title}>
@@ -81,11 +80,13 @@ export const RegistrationCourseBlock = ({ course }) => {
             </h3>
             <p className={styles.container__text}>{onOrOff?.start || ''}</p>
             <h3 className={styles.container__title}> Дни и время занятий </h3>
-            <p
-                className={styles.container__text}
-            >{`${graphic[0]} ${graphic[2]}${graphic[3]}${graphic[4]} ${graphic[1]} ${graphic[2]}${graphic[3]}${graphic[4]}`}</p>
+            <p className={styles.container__text}>
+                {graphic
+                    ? `${graphic[0]} ${graphic[2]}${graphic[3]}${graphic[4]} ${graphic[1]} ${graphic[2]}${graphic[3]}${graphic[4]}`
+                    : 'Уточняйте по телефону'}
+            </p>
             <h3 className={styles.container__title}>Кол-во свободных мест </h3>
-            <p className={styles.container__text}>{onOrOff?.places || ''}</p>
+            <p className={styles.container__text}>{onOrOff?.places || 'Уточняйте по телефону'}</p>
             <form onSubmit={handleSubmit} className={styles.container__FormWrapper}>
                 <Input value={name} onChange={setName} type="text" legend="Имя*" placeholder="Введите ваше имя" />
                 <InputPhone
